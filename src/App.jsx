@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import { useContext, useEffect } from 'react';
 import { SearchContext } from './context/searchContext';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function App() {
 	const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
 		<>
 			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
 				<h2>NavBar</h2>
+				<Link to="/favourites">Favourites</Link>
 				<SearchBar handleSubmit={handleSubmit} />
 			</header>
 			<Outlet context={searchBooks} />
