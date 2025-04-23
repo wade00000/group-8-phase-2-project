@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import useFetch from '../hooks/useFetch';
 import usePostDelete from '../hooks/usePostDelete';
 
-export default function Book({ book }) {
+export default function Book({ book, forceUpdate }) {
+	// console.log(forceUpdate)
 	const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;
 	const [isClick, setIsClick] = useState(false);
 
@@ -24,6 +25,7 @@ export default function Book({ book }) {
 	const handleClick = async () => {
 		const newState = !isClick;
 		setIsClick(newState);
+		forceUpdate()
 
 		if (newState) {
 			try {

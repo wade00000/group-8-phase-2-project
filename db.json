@@ -1,3 +1,57 @@
 {
-  "favourites": []
+  "favourites": [
+    {
+      "id": "KUqdYgEACAAJ",
+      "kind": "books#volume",
+      "etag": "WXLrSXt8KQs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/KUqdYgEACAAJ",
+      "volumeInfo": {
+        "title": "The Story of Our New King (King George V)",
+        "authors": [
+          "Miss Playtime"
+        ],
+        "publishedDate": "1910*",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OCLC:314805936"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 64,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=KUqdYgEACAAJ&dq=king+intitle:king&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=KUqdYgEACAAJ&dq=king+intitle:king&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Story_of_Our_New_King_King_George_V.html?hl=&id=KUqdYgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=KUqdYgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
 }

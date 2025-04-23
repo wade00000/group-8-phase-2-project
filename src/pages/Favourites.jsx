@@ -7,8 +7,7 @@ import useFetch from '../hooks/useFetch';
 export default function Favourites() {
 
 	
-	const {data : favouriteBooks = [],loading,error} = useFetch('http://localhost:3000/favourites')
-	
+	const {data : favouriteBooks = [],loading,error, forceUpdate} = useFetch('http://localhost:3000/favourites')
     if(loading) return <p>Loading favourites...</p>
 	if(error) return <p>Error loading favourites : {error.message}</p>
     
@@ -20,7 +19,7 @@ export default function Favourites() {
             ) : (
                 <div className="favourites-list">
                     {favouriteBooks.map((book) => (
-                        <Book key={book.id} book={book} />
+                        <Book key={book.id} book={book} forceUpdate={forceUpdate} />
                     ))}
                 </div>
             )}
