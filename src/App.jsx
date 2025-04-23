@@ -32,7 +32,7 @@ function App() {
 		e.preventDefault();
 		fetchData(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}+intitle:king&maxResults=40&key=AIzaSyBLGLvEaYHQiD2M_GxpYbcHCGtw_6sfVi4`);
 		if (location.pathname !== '/search') {
-			navigate();
+			navigate('/search');
 		}
 	}
 

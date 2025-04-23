@@ -1,3 +1,69 @@
 {
-  "favourites": []
+  "favourites": [
+    {
+      "id": "cn03EAAAQBAJ",
+      "kind": "books#volume",
+      "etag": "iLfenw3APgU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/cn03EAAAQBAJ",
+      "volumeInfo": {
+        "title": "Man: King of Mind, Body and Circumstance",
+        "authors": [
+          "James Allen"
+        ],
+        "publisher": "Sristhi Publishers & Distributors",
+        "publishedDate": "2021-07-03",
+        "description": "Man: King of Mind, Body and Circumstance aims at freeing us from the slavery of our negative and binding thoughts, enabling us to conquer our inhibitions and set our spirit free. This book by James Allen sums up the hows, whys and whats of taming the mind and its infinite energies, of channelizing the power of positive thinking, and striking a balance between the inner world of our thoughts as against the outer world of action.",
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 34,
+        "printType": "BOOK",
+        "categories": [
+          "Self-Help"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=cn03EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=cn03EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=cn03EAAAQBAJ&printsec=frontcover&dq=man+intitle:king&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=cn03EAAAQBAJ&dq=man+intitle:king&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Man_King_of_Mind_Body_and_Circumstance.html?hl=&id=cn03EAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Man_King_of_Mind_Body_and_Circumstance-sample-epub.acsm?id=cn03EAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Man_King_of_Mind_Body_and_Circumstance-sample-pdf.acsm?id=cn03EAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=cn03EAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book by James Allen sums up the hows, whys and whats of taming the mind and its infinite energies, of channelizing the power of positive thinking, and striking a balance between the inner world of our thoughts as against the outer ..."
+      }
+    }
+  ]
 }
