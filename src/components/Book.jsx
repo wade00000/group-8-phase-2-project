@@ -27,13 +27,17 @@ export default function Book({ book }) {
 
 		if (newState) {
 			try {
+                //Adds book to favourites
 				await postData('http://localhost:3000/favourites', book);
+                console.log('Added to favourites')
 			} catch {
 				setIsClick(false);
 			}
 		} else {
 			try {
+                //Removes book from favourites
 				await deleteData(`http://localhost:3000/favourites/${book.id}`);
+                console.log('Removed from favourites')
 			} catch {
 				setIsClick(true);
 			}
@@ -45,10 +49,10 @@ export default function Book({ book }) {
 			<img src={imageLinks?.thumbnail} alt={title} />
 			<h2>{title}</h2>
 			<p>{authors?.join(', ')}</p>
-			<p>{publishedDate}</p>
+			<p>{publishedDate}</p>  
 			<p>{description}</p>
 			<button onClick={handleClick}>
-				Favourite {isClick ? '★' : '☆'}
+			 {isClick ? 'Remove from Favourites' + ' ★' : 'Add to Favourites' + ' ☆'}
 			</button>
 		</div>
 	);
