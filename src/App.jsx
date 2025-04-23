@@ -30,7 +30,7 @@ function App() {
 
 	function handleSubmit(e) {
 		e.preventDefault();
-		fetchData(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}+intitle:king&maxResults=40&key=AIzaSyBLGLvEaYHQiD2M_GxpYbcHCGtw_6sfVi4`);
+		fetchData(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}+intitle:${searchTerm}&maxResults=40&key=AIzaSyBLGLvEaYHQiD2M_GxpYbcHCGtw_6sfVi4`);
 		if (location.pathname !== '/search') {
 			navigate('/search');
 		}
