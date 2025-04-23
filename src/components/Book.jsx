@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import useFetch from '../hooks/useFetch';
 import usePostDelete from '../hooks/usePostDelete';
+import { useLocation } from 'react-router-dom';
 
 export default function Book({ book, forceUpdate }) {
 	// console.log(forceUpdate)
@@ -9,37 +10,38 @@ export default function Book({ book, forceUpdate }) {
 
 	const { data: favourites = [] } = useFetch('http://localhost:3000/favourites');
 	const { postData, deleteData } = usePostDelete();
+	const location = useLocation()
 
-
-    //Favourite Validation
+	//Favourite Validation
 	useEffect(() => {
-        // Waits for the array data in favourites to be fetched before acting on it
+		// Waits for the array data in favourites to be fetched before acting on it
 		if (Array.isArray(favourites)) {
-            const isFavourite = favourites.some((favBook) => favBook.id === book.id);
-            setIsClick(isFavourite);
-          }
+			const isFavourite = favourites.some((favBook) => favBook.id === book.id);
+			setIsClick(isFavourite);
+		}
 	}, [favourites, book.id]);
 
-
-    //Handling button click
+	//Handling button click
 	const handleClick = async () => {
 		const newState = !isClick;
 		setIsClick(newState);
-		forceUpdate()
+		if (location.pathname === '/favourites') {
+			forceUpdate()
+		}
 
 		if (newState) {
 			try {
-                //Adds book to favourites
+				//Adds book to favourites
 				await postData('http://localhost:3000/favourites', book);
-                console.log('Added to favourites')
+				console.log('Added to favourites');
 			} catch {
 				setIsClick(false);
 			}
 		} else {
 			try {
-                //Removes book from favourites
+				//Removes book from favourites
 				await deleteData(`http://localhost:3000/favourites/${book.id}`);
-                console.log('Removed from favourites')
+				console.log('Removed from favourites');
 			} catch {
 				setIsClick(true);
 			}
@@ -51,11 +53,9 @@ export default function Book({ book, forceUpdate }) {
 			<img src={imageLinks?.thumbnail} alt={title} />
 			<h2>{title}</h2>
 			<p>{authors?.join(', ')}</p>
-			<p>{publishedDate}</p>  
+			<p>{publishedDate}</p>
 			<p>{description}</p>
-			<button onClick={handleClick}>
-			 {isClick ? 'Remove from Favourites' + ' ★' : 'Add to Favourites' + ' ☆'}
-			</button>
+			<button onClick={handleClick}>{isClick ? 'Remove from Favourites' + ' ★' : 'Add to Favourites' + ' ☆'}</button>
 		</div>
 	);
 }

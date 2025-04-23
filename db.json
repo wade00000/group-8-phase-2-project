@@ -1,35 +1,36 @@
 {
   "favourites": [
     {
-      "id": "KUqdYgEACAAJ",
+      "id": "np4xNAEACAAJ",
       "kind": "books#volume",
-      "etag": "WXLrSXt8KQs",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/KUqdYgEACAAJ",
+      "etag": "i3PFh2Zyk5I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/np4xNAEACAAJ",
       "volumeInfo": {
-        "title": "The Story of Our New King (King George V)",
+        "title": "King King",
         "authors": [
-          "Miss Playtime"
+          "Pickersgill, Edward",
+          "Potvin, Freddie"
         ],
-        "publishedDate": "1910*",
+        "publishedDate": "1979",
         "industryIdentifiers": [
           {
             "type": "OTHER",
-            "identifier": "OCLC:314805936"
+            "identifier": "OCLC:16181167"
           }
         ],
         "readingModes": {
           "text": false,
           "image": false
         },
-        "pageCount": 64,
+        "pageCount": 21,
         "printType": "BOOK",
         "maturityRating": "NOT_MATURE",
         "allowAnonLogging": false,
         "contentVersion": "preview-1.0.0",
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=KUqdYgEACAAJ&dq=king+intitle:king&hl=&cd=3&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=KUqdYgEACAAJ&dq=king+intitle:king&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/The_Story_of_Our_New_King_King_George_V.html?hl=&id=KUqdYgEACAAJ"
+        "previewLink": "http://books.google.com/books?id=np4xNAEACAAJ&dq=king+intitle:king&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=np4xNAEACAAJ&dq=king+intitle:king&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/King_King.html?hl=&id=np4xNAEACAAJ"
       },
       "saleInfo": {
         "country": "KE",
@@ -48,7 +49,7 @@
         "pdf": {
           "isAvailable": false
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=KUqdYgEACAAJ&hl=&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=np4xNAEACAAJ&hl=&source=gbs_api",
         "accessViewStatus": "NONE",
         "quoteSharingAllowed": false
       }
