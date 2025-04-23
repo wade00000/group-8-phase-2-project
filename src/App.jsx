@@ -10,7 +10,7 @@ function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
 	useEffect(() => {
-		console.log('wow');
+		console.log('ok');
 		if (location.pathname === '/') {
 			navigate('/search');
 		}

@@ -1,23 +1,17 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Book from '../components/Book'; // Ensure this path is correct
+import useFetch from '../hooks/useFetch';
+
 
 export default function Favourites() {
-    const [favouriteBooks, setFavouriteBooks] = useState([]);
 
-    const fetchFavouriteBooks = async () => {
-        try {
-            const response = await axios.get('http://localhost:3000/favourites');
-            setFavouriteBooks(response.data); // Update the favourites list
-        } catch (error) {
-            console.error('Error fetching favourites:', error);
-        }
-    };
-
-    useEffect(() => {
-        fetchFavouriteBooks(); // Fetch favourite books when the component mounts
-    }, []); // Empty array to run only once when component mounts
-
+	
+	const {data : favouriteBooks = [],loading,error} = useFetch('http://localhost:3000/favourites')
+	
+    if(loading) return <p>Loading favourites...</p>
+	if(error) return <p>Error loading favourites : {error.message}</p>
+    
     return (
         <div>
             <h2>Your Favourites</h2>

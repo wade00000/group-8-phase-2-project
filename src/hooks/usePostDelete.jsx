@@ -1,4 +1,3 @@
-// hooks/usePostDelete.js
 import { useState } from 'react';
 import axios from 'axios';
 
