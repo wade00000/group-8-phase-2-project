@@ -12,7 +12,7 @@ const routes = [
 		errorElement: <div>404 Not Found</div>,
 		children: [
 			{
-				path: '/favourites',
+				path: '/Favourites',
 				element: <Favourites />,
 			},
 			{
