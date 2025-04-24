@@ -6,6 +6,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CollectionContext } from './context/collectionContext';
+import Navbar from './components/NavBar';
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
 		<>
 			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
 				<h2>NavBar</h2>
+				<Link to="/HomePage">Home</Link>
+				<Link to="/AboutPage">About</Link>
 				<Link to="/favourites">Favourites</Link>
 				<Link to="/collections">Collections</Link>
 				<SearchBar handleSubmit={handleSubmit} />
