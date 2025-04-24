@@ -1,6 +1,8 @@
 import App from './App';
 import Favourites from './pages/Favourites';
 import SearchPage from './pages/SearchPage';
+import CollectionPage from './pages/CollectionPage'; // Adjust path if needed
+
 
 const routes = [
 	{
@@ -15,6 +17,10 @@ const routes = [
 			{
 				path: '/search',
 				element: <SearchPage />,
+			},
+			{
+				path: '/collections',
+				element: <CollectionPage />, // ✅ New route
 			},
 		],
 	},

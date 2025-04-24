@@ -1,0 +1,134 @@
+.book {
+	background-color: #100f0f;
+	border: 1px solid #ebe6e6;
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	transition: transform 0.2s;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.book:hover {
+	transform: translateY(-5px);
+}
+
+.book img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+	object-fit: cover;
+}
+
+.book h2 {
+	font-size: 1.2rem;
+	margin: 0.5rem 0;
+}
+
+.book p {
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.book button {
+	margin-top: auto;
+	padding: 0.5rem 1rem;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.book button:hover {
+	background-color: #0056b3;
+}
+
+.book img {
+	width: 150px;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+	align-self: center;
+}
+.book h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+
+/* Book container for search page */
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns in the grid */
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    max-width: 1300px;
+  }
+  
+  /* Book card styling for search-only view */
+  .book.search-only {
+    width: 160px;
+  height: 250px;
+  padding: 0;                /* Remove any padding */
+  border: none;              /* Optional: remove border if not needed */
+  background: none;          /* Optional: remove background if image takes entire space */
+  border-radius: 10px;
+  overflow: hidden;
+  }
+  
+  /* Styling the image to be uniform in size */
+  .book.search-only .book-image {
+    width: 100%;           /* Fill the entire card width */
+    height: 100%;          /* Fill the entire card height */
+    object-fit: cover;     /* Crop the image to fill without stretching */
+    border-radius: 8px;    /* Optional: rounded corners */
+    display: block;
+  }
+  
+  
+  /* Optional: Limit description to 3 lines */
+  .description {
+    display: -webkit-box;
+    
+    /* Limit description to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #555;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Ensures the container is centered */
+  .row.mx-auto {
+    display: flex;
+    justify-content: center; /* Center the grid items */
+  }
+  
+  /* Centering the row */
+.row.justify-content-center {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;  /* Adds spacing between the books */
+  }
+  .container {
+    max-width: 1200px; /* Limit the width of the entire grid */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .book.search-only img {
+    width: 100%;           /* Fill the entire card width */
+    height: 100%;          /* Fill the entire card height */
+    object-fit: cover;     /* Crop the image to fill without stretching */
+    border-radius: 8px;    /* Optional: rounded corners */
+    display: block;
+  }
+
+  
