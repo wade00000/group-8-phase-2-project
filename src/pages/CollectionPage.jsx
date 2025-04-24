@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { CollectionContext } from '../context/collectionContext'; // Named import
 
 function CollectionPage() {
-  const { collectionBooks, setCollectionBooks } = useContext(CollectionsContext);
+  const { collectionBooks, setCollectionBooks } = useContext(CollectionContext);
 
   return (
     <div>
