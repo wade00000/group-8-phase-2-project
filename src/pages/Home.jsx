@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
-import Book from '../components/Book';
-import '../Styles/SearchPage.css'; // Optional, reuse modal styles from Search
+import '../Styles/SearchPage.css';
 import axios from 'axios';
+import AddToFavouritesButton from '../components/AddToFavouritesButton';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
 
-  // Fetch some default books to show on home page
   useEffect(() => {
     axios
-      .get('https://www.googleapis.com/books/v1/volumes?q=featured')
+      .get('https://www.googleapis.com/books/v1/volumes?q=featured&maxResults=20')
       .then((res) => setBooks(res.data.items))
       .catch((err) => console.error(err));
   }, []);
@@ -24,21 +23,28 @@ export default function Home() {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container">
       <h1 className="text-center mb-4">Welcome to the Book App</h1>
-      <h2>Featured Books</h2>
+      <h2 className="text-center mb-4">Featured Books</h2>
 
       {books.length ? (
         <div className="row justify-content-center">
-          {books.map((book) => (
-            <div key={book.id} className="col-md-2 col-sm-3 mb-4">
-              <Book
-                book={book}
-                searchOnly={true}
-                setSelectedBook={handleBookClick}
-              />
-            </div>
-          ))}
+          {books.map((book) => {
+            const thumbnail = book.volumeInfo.imageLinks?.thumbnail;
+            if (!thumbnail) return null;
+
+            return (
+              <div key={book.id} className="col-md-2 col-sm-3 mb-4">
+                <img
+                  src={thumbnail}
+                  alt={book.volumeInfo.title}
+                  className="img-fluid book-thumbnail"
+                  onClick={() => handleBookClick(book)}
+                  style={{ cursor: 'pointer', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
+                />
+              </div>
+            );
+          })}
         </div>
       ) : (
         <p>Loading featured books...</p>
@@ -54,7 +60,11 @@ export default function Home() {
               className="modal-image"
             />
             <p>{selectedBook.volumeInfo.description}</p>
-            <button onClick={handleCloseModal}>Close</button>
+      
+            {/* ✅ Add Favourite Button in Modal */}
+            <AddToFavouritesButton book={selectedBook} />
+      
+            <button onClick={handleCloseModal} className="close-btn">Close</button>
           </div>
         </div>
       )}

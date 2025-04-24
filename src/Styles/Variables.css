@@ -1,25 +1,24 @@
 :root {
-    /* Primary Colors */
-    --primary: #00d0ff;     /* Bright Cyan */
-    --secondary: #ff0f7a;   /* Electric Pink */
-    --accent: #ff5c00;      /* Vibrant Orange */
-  
-    /* Background Colors */
-    --background: #fefefe;  /* Soft White background */
-    --navbar-background: #d4d4d4;  /* Dark background for navbar */
-    --modal-background: rgba(0, 0, 0, 0.7); /* Semi-transparent black for modals */
-  
-    /* Text Colors */
-    --text-light: #ffffff;  /* White for text */
-    --text-dark: #222222;   /* Dark text for contrast */
-    --text-muted: #555555;  /* Muted gray text */
-  
-    /* Button Colors */
-    --button-background: var(--accent);  /* Button background */
-    --button-hover: #ff3d00;             /* Darker orange for button hover */
-  
-    /* Shadows */
-    --shadow-light: rgba(0, 0, 0, 0.1);  /* Light shadow */
-    --shadow-dark: rgba(0, 0, 0, 0.3);   /* Darker shadow for modals */
-  }
-  
+  /* Primary Colors */
+  --primary: #00d0ff;     /* Bright Cyan */
+  --secondary: #8b536c;   /* Electric Pink */
+  --accent: #157959;      /* Vibrant Orange */
+
+  /* Background Colors */
+  --background: #f1cfcf;  /* Soft White background */
+  --navbar-background: #00897b;  /* Dark background for navbar */
+  --modal-background: #96bbb7; /* Semi-transparent black for modals */
+
+  /* Text Colors */
+  --text-light: #ffffff;  /* White for text */
+  --text-dark: #222222;   /* Dark text for contrast */
+  --text-muted: #555555;  /* Muted gray text */
+
+  /* Button Colors */
+  --button-background: var(--accent);  /* Button background */
+  --button-hover: #157959;             /* Darker orange for button hover */
+
+  /* Shadows */
+  --shadow-light: rgba(0, 0, 0, 0.1);  /* Light shadow */
+  --shadow-dark: rgba(0, 0, 0, 0.3);   /* Darker shadow for modals */
+}

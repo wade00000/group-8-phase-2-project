@@ -4,6 +4,7 @@ import { SearchContext } from '../context/searchContext';
 import '../Styles/SearchPage.css';
 import { useOutletContext } from 'react-router-dom';
 import Loader from '../components/Loader';
+import AddToFavouritesButton from '../components/AddToFavouritesButton';
 
 export default function Search() {
   const { searchBooks } = useContext(SearchContext);
@@ -26,7 +27,7 @@ export default function Search() {
   }
 
   return (
-    <div className="container mt-5">
+    <div className="container">
       <h1 className="text-center mb-4">Search Page</h1>
 
       {/* Display books */}
@@ -48,19 +49,24 @@ export default function Search() {
 
       {/* Modal / Overlay for displaying the selected book */}
       {selectedBook && (
-        <div className="overlay" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <h2>{selectedBook.volumeInfo.title}</h2>
-            <img
-              src={selectedBook.volumeInfo.imageLinks?.thumbnail}
-              alt={selectedBook.volumeInfo.title}
-              className="modal-image"
-            />
-            <p>{selectedBook.volumeInfo.description}</p>
-            <button onClick={handleCloseModal}>Close</button>
-          </div>
-        </div>
-      )}
+  <div className="overlay" onClick={handleCloseModal}>
+    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <h2>{selectedBook.volumeInfo.title}</h2>
+      <img
+        src={selectedBook.volumeInfo.imageLinks?.thumbnail}
+        alt={selectedBook.volumeInfo.title}
+        className="modal-image"
+      />
+      <p>{selectedBook.volumeInfo.description}</p>
+
+      {/* ✅ Add Favourite Button in Modal */}
+      <AddToFavouritesButton book={selectedBook} />
+
+      <button onClick={handleCloseModal} className="close-btn">Close</button>
+    </div>
+  </div>
+)}
+
     </div>
   );
 }

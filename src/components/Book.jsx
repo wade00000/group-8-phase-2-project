@@ -1,19 +1,17 @@
 import { useState, useEffect, useContext } from 'react';
 import usePostDelete from '../hooks/usePostDelete';
-// import { useLocation } from 'react-router-dom';
-import {SearchContext} from '../context/searchContext'
+import { SearchContext } from '../context/searchContext';
 import '../Styles/Book.css';
-import placeholder from '../assets/placeholder.jpg'
+import placeholder from '../assets/placeholder.jpg';
 import '../Styles/Variables.css';
+import { useLocation } from 'react-router-dom';
 
 export default function Book({ book, searchOnly, setSelectedBook, forceUpdate }) {
   const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;
   const [isClick, setIsClick] = useState(false);
-
-  // Same logic for favourites
-	const {favourites} = useContext(SearchContext)
+  const { favourites } = useContext(SearchContext);
   const { postData, deleteData } = usePostDelete();
-  // const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     if (Array.isArray(favourites)) {
@@ -22,56 +20,55 @@ export default function Book({ book, searchOnly, setSelectedBook, forceUpdate })
     }
   }, [favourites, book.id]);
 
-  const handleClick = async () => {
+  const handleClick = async (e) => {
+    e.stopPropagation(); // Prevent modal from opening when clicking the button
     const newState = !isClick;
     setIsClick(newState);
+    
     if (location.pathname === '/favourites') {
       forceUpdate();
     }
-    if (newState) {
-      try {
+
+    try {
+      if (newState) {
         await postData('http://localhost:3000/favourites', book);
-      } catch {
-        setIsClick(false);
-      }
-    } else {
-      try {
+      } else {
         await deleteData(`http://localhost:3000/favourites/${book.id}`);
-      } catch {
-        setIsClick(true);
       }
+    } catch {
+      setIsClick(!newState); // Rollback state if error occurs
     }
   };
 
-  // Open the book details in center-focused modal
   const handleImageClick = () => {
-    setSelectedBook(book); // This sets the clicked book to be displayed in the modal
+    if (setSelectedBook) {
+      setSelectedBook(book); // Open modal
+    }
   };
 
   return (
     <div className={`book ${searchOnly ? 'search-only' : ''}`} onClick={handleImageClick}>
-      {/* Show image only if searchOnly is true */}
       <img
         src={imageLinks?.thumbnail || placeholder}
         alt={title}
         className="book-image"
       />
 
-      {/* Show other book details only when not in search grid */}
+      {/* Only show book details if not in search view */}
       {!searchOnly && (
         <>
           <h2>{title}</h2>
           <p>{authors?.join(', ')}</p>
           <p>{publishedDate}</p>
           <p className="description">{description}</p>
+
+          <div className="btn-container">
+            <button onClick={handleClick}>
+              {isClick ? 'Remove from Favourites ★' : 'Add to Favourites ☆'}
+            </button>
+          </div>
         </>
       )}
-        <div>
-        <button onClick={handleClick}>
-            {isClick ? 'Remove from Favourites ★' : 'Add to Favourites ☆'}
-          </button>
-        </div>
-         
     </div>
   );
 }

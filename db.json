@@ -255,6 +255,230 @@
       "searchInfo": {
         "textSnippet": "... <b>featured</b> on day 1 . No breed is <b>featured</b> on any two consecutive days . Any breed <b>featured</b> on day 1 is not <b>featured</b> on day 7 . Himalayans are <b>featured</b> on exactly three days , but not on day 1 . Rottweilers are not <b>featured</b> on day 7 , nor&nbsp;..."
       }
+    },
+    {
+      "id": "GqTwl7-WZtUC",
+      "kind": "books#volume",
+      "etag": "yK6/4beTwaM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GqTwl7-WZtUC",
+      "volumeInfo": {
+        "title": "Google Hacks",
+        "authors": [
+          "Tara Calishain",
+          "Rael Dornfest"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2003",
+        "description": "Explains how to take advantage of Google's user interface, discussing how to filter results, use Google's special services, integrate Google applications into a Web site or Weblog, write information retrieval programs, and play games.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0596004478"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780596004477"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 356,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.4.6.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GqTwl7-WZtUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GqTwl7-WZtUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=GqTwl7-WZtUC&pg=PA52&dq=intitle:&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=GqTwl7-WZtUC&dq=intitle:&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Google_Hacks.html?hl=&id=GqTwl7-WZtUC"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GqTwl7-WZtUC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>intitle</b> : dictionary OR <b>intitle</b> : glossary OR <b>intitle</b> : lexicon OR <b>intitle</b> : definitions &quot; &gt; synonyms of &quot; glossary &quot; in TITLE 1 &lt; / option &gt; &lt; option value = &quot; <b>intitle</b> : terminology OR <b>intitle</b> : vocabulary OR <b>intitle</b> : definition OR&nbsp;..."
+      }
+    },
+    {
+      "id": "ZEG8EAAAQBAJ",
+      "kind": "books#volume",
+      "etag": "RuYe3eOWJlE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZEG8EAAAQBAJ",
+      "volumeInfo": {
+        "title": "Discovering Hidden Gems in Foreign Languages",
+        "authors": [
+          "M.D. Miller"
+        ],
+        "publisher": "Springer Nature",
+        "publishedDate": "2023-04-27",
+        "description": "This book offers a practical approach to conducting research in foreign languages on topics with a global nexus. It introduces the problem researchers face when getting started with a research problem, such as setting up the research environment and establishing goals for the research. The researcher then needs to prepares and to conduct foreign-language research by generating key terms and searching the right places where the information they seek is most likely to be stored. Using the appropriate advanced search operators, the researcher narrows down the search results to the desired sources, thereby eliminating the irrelevant sources. Specialized knowledge of country-specific domains advances the specificity and relevance of the researcher’s efforts. The methods and tools demonstrated in this book are applicable to a variety of academic and practical fields. A doctor may ask “what are other experts in my field saying about ABC disease?” A sommelier may ask “where else in the world are XYZ grape varietals grown?” A businessman may ask “who are my global competitors in my market?” A doctoral student may ask “have any other students at universities abroad ever written a dissertation about my topic, too?” With the tools and techniques demonstrated in this book, all of these questions are answerable. This book concludes with chapters on translation and citation methods, and includes three case studies that demonstrate the practical use of the methods discussed above. This book targets academic researchers as well as students and faculty. This book will also be a good fit as an assigned reading for a college course on thesis/dissertation research.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783031184796"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3031184793"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 299,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZEG8EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZEG8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ZEG8EAAAQBAJ&pg=PA87&dq=intitle:&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ZEG8EAAAQBAJ&dq=intitle:&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Discovering_Hidden_Gems_in_Foreign_Langu.html?hl=&id=ZEG8EAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Discovering_Hidden_Gems_in_Foreign_Langu-sample-epub.acsm?id=ZEG8EAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Discovering_Hidden_Gems_in_Foreign_Langu-sample-pdf.acsm?id=ZEG8EAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZEG8EAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>intitle</b>: and allintitle: operators will specifically search for words within the &lt;title&gt; tag. While both of these operators will search for terms in the title of an HTML webpage, the major difference between the two is that the <b>intitle</b>&nbsp;..."
+      }
+    },
+    {
+      "id": "66XODwAAQBAJ",
+      "kind": "books#volume",
+      "etag": "JaWs45eybZM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/66XODwAAQBAJ",
+      "volumeInfo": {
+        "title": "LSAT Logic Games",
+        "authors": [
+          "Manhattan Prep"
+        ],
+        "publisher": "Manhattan Prep",
+        "publishedDate": "2020-03-03",
+        "description": "Manhattan Prep’s LSAT Logic Games guide, fully updated for the digital exam, is an essential tool for the LSAT section that everyone loves to hate. Manhattan Prep’s LSAT guides use officially-released LSAT questions and are written by the company’s instructors, who have all scored a 172 or higher on the official LSAT—we know how to earn a great score and we know how to teach you to do the same. This guide will train you to approach LSAT logic games as a 99th-percentile test-taker does: Recognize every type of game Make valid inferences Diagram quickly and accurately Predict correct answers and spot trap answers Take advantage of the digital format to work quickly and strategically You will have access to many practice problems and extensive solutions: Timed drill sets made up of real LSAT questions to help you absorb and apply what you’ve learned In-depth solutions, including hand-drawn diagrams and step-by-step analysis",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781506265629"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1506265626"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 675,
+        "printType": "BOOK",
+        "categories": [
+          "Study Aids"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=66XODwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=66XODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=66XODwAAQBAJ&pg=PA255&dq=featured&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=66XODwAAQBAJ&dq=featured&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/LSAT_Logic_Games.html?hl=&id=66XODwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=66XODwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>featured</b> on day 1 . No breed is <b>featured</b> on any two consecutive days . Any breed <b>featured</b> on day 1 is not <b>featured</b> on day 7 . Himalayans are <b>featured</b> on exactly three days , but not on day 1 . Rottweilers are not <b>featured</b> on day 7 , nor&nbsp;..."
+      }
     }
   ]
 }
