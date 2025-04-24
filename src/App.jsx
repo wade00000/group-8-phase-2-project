@@ -42,7 +42,6 @@ function App() {
 	return (
 		<>
 			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-				<h2>NavBar</h2>
 				<Link to="/Home">Home</Link>
 				<Link to="/About">About</Link>
 				<Link to="/favourites">Favourites</Link>

@@ -3,11 +3,24 @@ import { useState, createContext } from 'react';
 const SearchContext = createContext();
 
 function SearchProvider({ children }) {
-    // States manage the value of the search bar and the books received from the API respectively
 	const [searchTerm, setSearchTerm] = useState('');
 	const [searchBooks, setSearchBooks] = useState([]);
+	const [favourites, setFavourites] = useState([]); // ✅ Add this line
 
-	return <SearchContext.Provider value={{ searchTerm, setSearchTerm, searchBooks, setSearchBooks }}>{children} </SearchContext.Provider>;
+	return (
+		<SearchContext.Provider
+			value={{
+				searchTerm,
+				setSearchTerm,
+				searchBooks,
+				setSearchBooks,
+				favourites,        // ✅ Add this line
+				setFavourites,     // ✅ And this one
+			}}
+		>
+			{children}
+		</SearchContext.Provider>
+	);
 }
 
 export { SearchContext, SearchProvider };
