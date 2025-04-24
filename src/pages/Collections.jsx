@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { CollectionContext } from '../context/collectionContext'; // Named import
 
-function CollectionPage() {
+function Collections() {
   const { collectionBooks, setCollectionBooks } = useContext(CollectionContext);
 
   return (
@@ -16,4 +16,4 @@ function CollectionPage() {
   );
 }
 
-export default CollectionPage;
+export default Collections;

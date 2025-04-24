@@ -12,12 +12,13 @@ import Navbar from './components/NavBar';
 function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
-	useEffect(() => {
-		console.log('ok');
-		if (location.pathname === '/') {
-			navigate('/search');
-		}
-	}, [location, navigate]);
+	
+	// useEffect(() => {
+	// 	console.log('ok');
+	// 	if (location.pathname === '/') {
+	// 		navigate('/search');
+	// 	}
+	// }, [location, navigate]);
 
 	const { searchTerm,searchBooks, setSearchBooks } = useContext(SearchContext);
 
@@ -42,10 +43,7 @@ function App() {
 	return (
 		<>
 			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-				<Link to="/Home">Home</Link>
-				<Link to="/About">About</Link>
-				<Link to="/favourites">Favourites</Link>
-				<Link to="/collections">Collections</Link>
+				<Navbar/>
 				<SearchBar handleSubmit={handleSubmit} />
 			</header>
 			<Outlet context={searchBooks} />

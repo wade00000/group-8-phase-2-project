@@ -1,43 +1,49 @@
-import { useState, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import Book from '../components/Book';
-import { SearchContext } from '../context/searchContext';
-import '../Styles/SearchPage.css';
+import '../Styles/SearchPage.css'; // Optional, reuse modal styles from Search
+import axios from 'axios';
 
-export default function SearchPage() {
-  const { searchBooks } = useContext(SearchContext);
+export default function Home() {
+  const [books, setBooks] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
 
-  // This function is used to set the clicked book as selected
+  // Fetch some default books to show on home page
+  useEffect(() => {
+    axios
+      .get('https://www.googleapis.com/books/v1/volumes?q=featured')
+      .then((res) => setBooks(res.data.items))
+      .catch((err) => console.error(err));
+  }, []);
+
   const handleBookClick = (book) => {
     setSelectedBook(book);
   };
 
   const handleCloseModal = () => {
-    setSelectedBook(null); // Close the modal by setting selectedBook to null
+    setSelectedBook(null);
   };
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4">Search Page</h1>
+      <h1 className="text-center mb-4">Welcome to the Book App</h1>
+      <h2>Featured Books</h2>
 
-      {/* Display books */}
-      {searchBooks.length ? (
+      {books.length ? (
         <div className="row justify-content-center">
-          {searchBooks.map((book) => (
+          {books.map((book) => (
             <div key={book.id} className="col-md-2 col-sm-3 mb-4">
               <Book
                 book={book}
                 searchOnly={true}
-                setSelectedBook={handleBookClick} // Pass the function to Book component
+                setSelectedBook={handleBookClick}
               />
             </div>
           ))}
         </div>
       ) : (
-        <p>No books found.</p>
+        <p>Loading featured books...</p>
       )}
 
-      {/* Modal / Overlay for displaying the selected book */}
       {selectedBook && (
         <div className="overlay" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>

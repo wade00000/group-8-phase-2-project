@@ -1,9 +1,9 @@
 import App from './App';
 import Favourites from './pages/Favourites';
-import SearchPage from './pages/SearchPage';
-import CollectionPage from './pages/CollectionPage'; // Adjust path if needed
-import AboutPage from './pages/AboutPage';
-import HomePage from './pages/HomePage';
+import SearchPage from './pages/Search';
+import Collections from './pages/Collections'; // Adjust path if needed
+import About from './pages/About';
+import Home from './pages/Home';
 
 const routes = [
 	{
@@ -11,27 +11,29 @@ const routes = [
 		element: <App />,
 		errorElement: <div>404 Not Found</div>,
 		children: [
-			{
-				path: '/Favourites',
-				element: <Favourites />,
-			},
-			{
-				path: '/search',
-				element: <SearchPage />,
-			},
-			{
-				path: '/collections',
-				element: <CollectionPage />, // ✅ New route
-			},
-			{
-				path: '/About',
-				element: <AboutPage />, // ✅ New route
-			},{
-				path: '/Home',
-				element: <HomePage/>, // ✅ New route
-			},
+		  {
+			index: true,
+			element: <Home/>,
+		  },
+		  {
+			path: '/Favourites',
+			element: <Favourites />,
+		  },
+		  {
+			path: '/search',
+			element: <SearchPage />,
+		  },
+		  {
+			path: '/collections',
+			element: <Collections />,
+		  },
+		  {
+			path: '/About',
+			element: <About/>,
+		  },
 		],
-	},
+	  }
+	  
 ];
 
 export default routes;
