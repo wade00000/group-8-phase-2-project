@@ -4,64 +4,69 @@ import usePostDelete from '../hooks/usePostDelete';
 import { useLocation } from 'react-router-dom';
 import '../Styles/Book.css';
 
-export default function Book({ book, forceUpdate, searchOnly }) {
-	const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;
-	const [isClick, setIsClick] = useState(false);
+export default function Book({ book, forceUpdate, searchOnly, setSelectedBook }) {
+  const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;
+  const [isClick, setIsClick] = useState(false);
 
-	// Same logic for favourites
-	const { data: favourites = [] } = useFetch('http://localhost:3000/favourites');
-	const { postData, deleteData } = usePostDelete();
-	const location = useLocation();
+  // Same logic for favourites
+  const { data: favourites = [] } = useFetch('http://localhost:3000/favourites');
+  const { postData, deleteData } = usePostDelete();
+  const location = useLocation();
 
-	useEffect(() => {
-		if (Array.isArray(favourites)) {
-			const isFavourite = favourites.some((favBook) => favBook.id === book.id);
-			setIsClick(isFavourite);
-		}
-	}, [favourites, book.id]);
+  useEffect(() => {
+    if (Array.isArray(favourites)) {
+      const isFavourite = favourites.some((favBook) => favBook.id === book.id);
+      setIsClick(isFavourite);
+    }
+  }, [favourites, book.id]);
 
-	const handleClick = async () => {
-		const newState = !isClick;
-		setIsClick(newState);
-		if (location.pathname === '/favourites') {
-			forceUpdate();
-		}
-		if (newState) {
-			try {
-				await postData('http://localhost:3000/favourites', book);
-			} catch {
-				setIsClick(false);
-			}
-		} else {
-			try {
-				await deleteData(`http://localhost:3000/favourites/${book.id}`);
-			} catch {
-				setIsClick(true);
-			}
-		}
-	};
+  const handleClick = async () => {
+    const newState = !isClick;
+    setIsClick(newState);
+    if (location.pathname === '/favourites') {
+      forceUpdate();
+    }
+    if (newState) {
+      try {
+        await postData('http://localhost:3000/favourites', book);
+      } catch {
+        setIsClick(false);
+      }
+    } else {
+      try {
+        await deleteData(`http://localhost:3000/favourites/${book.id}`);
+      } catch {
+        setIsClick(true);
+      }
+    }
+  };
 
-	return (
-		<div className={`book ${searchOnly ? 'search-only' : ''}`}>
-			{/* Show image only if searchOnly is true */}
-			<img
-				src={imageLinks?.thumbnail}
-				alt={title}
-				className="book-image"
-			/>
+  // Open the book details in center-focused modal
+  const handleImageClick = () => {
+    setSelectedBook(book); // This sets the clicked book to be displayed in the modal
+  };
 
-			{/* Show other book details only when not in search grid */}
-			{!searchOnly && (
-				<>
-					<h2>{title}</h2>
-					<p>{authors?.join(', ')}</p>
-					<p>{publishedDate}</p>
-					<p className="description">{description}</p>
-					<button onClick={handleClick}>
-						{isClick ? 'Remove from Favourites ★' : 'Add to Favourites ☆'}
-					</button>
-				</>
-			)}
-		</div>
-	);
+  return (
+    <div className={`book ${searchOnly ? 'search-only' : ''}`} onClick={handleImageClick}>
+      {/* Show image only if searchOnly is true */}
+      <img
+        src={imageLinks?.thumbnail}
+        alt={title}
+        className="book-image"
+      />
+
+      {/* Show other book details only when not in search grid */}
+      {!searchOnly && (
+        <>
+          <h2>{title}</h2>
+          <p>{authors?.join(', ')}</p>
+          <p>{publishedDate}</p>
+          <p className="description">{description}</p>
+          <button onClick={handleClick}>
+            {isClick ? 'Remove from Favourites ★' : 'Add to Favourites ☆'}
+          </button>
+        </>
+      )}
+    </div>
+  );
 }

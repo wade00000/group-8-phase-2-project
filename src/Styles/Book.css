@@ -131,4 +131,53 @@
     display: block;
   }
 
-  
+  /* Styles for overlay */
+/* Styles for overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(101, 101, 101, 0.8); /* Dim the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it appears above other content */
+}
+
+/* Styles for the modal content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px; /* Shorter width */
+  width: 90%; /* Allowing it to be slightly flexible */
+  height: 80%; /* Longer length */
+  overflow-y: auto; /* Enable scrolling */
+  text-align: center;
+  position: relative;
+}
+
+/* Image inside modal */
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Limit the height of the image */
+  object-fit: contain; /* Ensures the image doesn't get distorted */
+  margin-bottom: 20px;
+}
+
+/* Close button styles */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

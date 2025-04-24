@@ -1,27 +1,57 @@
+import { useState, useContext } from 'react';
 import Book from '../components/Book';
 import { SearchContext } from '../context/searchContext';
-import { useContext } from 'react';
 import '../Styles/SearchPage.css';
 
-
 export default function SearchPage() {
-	const { searchBooks } = useContext(SearchContext);
-    // Displays the books received from the API
-	return (
-		<div className="container mt-5">
-			<h1 className="text-center mb-4">Search Page</h1>
-			{searchBooks.length ? (
-				<div className="row justify-content-center">
-					{searchBooks.map((book) => (
-						<div key={book.id} className="col-md-2 col-sm-3 mb-4">
-							{/* Pass searchOnly as true to display only the image */}
-							<Book book={book} searchOnly={true} />
-						</div>
-					))}
-				</div>
-			) : (
-				<p>No books found.</p>
-			)}
-		</div>
-	);
+  const { searchBooks } = useContext(SearchContext);
+  const [selectedBook, setSelectedBook] = useState(null);
+
+  // This function is used to set the clicked book as selected
+  const handleBookClick = (book) => {
+    setSelectedBook(book);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedBook(null); // Close the modal by setting selectedBook to null
+  };
+
+  return (
+    <div className="container mt-5">
+      <h1 className="text-center mb-4">Search Page</h1>
+
+      {/* Display books */}
+      {searchBooks.length ? (
+        <div className="row justify-content-center">
+          {searchBooks.map((book) => (
+            <div key={book.id} className="col-md-2 col-sm-3 mb-4">
+              <Book
+                book={book}
+                searchOnly={true}
+                setSelectedBook={handleBookClick} // Pass the function to Book component
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p>No books found.</p>
+      )}
+
+      {/* Modal / Overlay for displaying the selected book */}
+      {selectedBook && (
+        <div className="overlay" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h2>{selectedBook.volumeInfo.title}</h2>
+            <img
+              src={selectedBook.volumeInfo.imageLinks?.thumbnail}
+              alt={selectedBook.volumeInfo.title}
+              className="modal-image"
+            />
+            <p>{selectedBook.volumeInfo.description}</p>
+            <button onClick={handleCloseModal}>Close</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
