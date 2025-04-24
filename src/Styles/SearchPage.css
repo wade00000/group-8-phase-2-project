@@ -4,3 +4,95 @@
 	gap: 1.5rem;
 	padding: 1rem;
 }
+
+/* HomePage.css */
+
+/* General container for home page */
+.container {
+	padding: 3rem 2rem;  /* Extra padding for the top */
+	background-color: var(--background);
+  }
+  
+  /* Heading styles */
+  h1 {
+	font-size: 2.5rem;
+	color: var(--primary);
+	font-weight: bold;
+  }
+  
+  h2 {
+	font-size: 1.8rem;
+	color: var(--secondary);
+	margin-bottom: 2rem;
+  }
+  
+  /* Featured books row styles */
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .col-md-2,
+  .col-sm-3 {
+	margin: 1rem;
+	text-align: center;
+  }
+  
+  /* Loading text */
+  p {
+	font-size: 1.2rem;
+	color: var(--text-muted);
+	text-align: center;
+  }
+  
+  /* Modal Styling */
+  .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--modal-background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+  }
+  
+  .modal-content {
+	background-color: var(--background);
+	padding: 2rem;
+	border-radius: 8px;
+	width: 80%;
+	max-width: 600px;
+	box-shadow: var(--shadow-dark);
+	text-align: center;
+  }
+  
+  .modal-content h2 {
+	font-size: 1.8rem;
+	color: var(--primary);
+  }
+  
+  .modal-content img {
+	width: 100%;
+	border-radius: 8px;
+	margin: 1.5rem 0;
+  }
+  
+  .modal-content button {
+	padding: 0.8rem 1.5rem;
+	background-color: var(--accent);
+	color: var(--text-light);
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .modal-content button:hover {
+	background-color: var(--button-hover);
+  }
+  

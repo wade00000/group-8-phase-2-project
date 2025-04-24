@@ -9,6 +9,7 @@ import { CollectionContext } from './context/collectionContext';
 import Navbar from './components/NavBar';
 
 
+
 function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
@@ -42,11 +43,13 @@ function App() {
 
 	return (
 		<>
-			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-				<Navbar handleSubmit={handleSubmit}/>	
-			</header>
-			<Outlet context={searchBooks} />
-		</>
+  <Navbar handleSubmit={handleSubmit} />	
+
+  <main className="main-content">
+    <Outlet context={searchBooks} />
+  </main>
+</>
+
 	);
 }
 

@@ -3,6 +3,7 @@ import usePostDelete from '../hooks/usePostDelete';
 import { useLocation } from 'react-router-dom';
 import {SearchContext} from '../context/searchContext'
 import '../Styles/Book.css';
+import '../Styles/Variables.css';
 
 export default function Book({ book, forceUpdate, searchOnly, setSelectedBook }) {
   const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;

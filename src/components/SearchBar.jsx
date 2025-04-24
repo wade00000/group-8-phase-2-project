@@ -1,6 +1,7 @@
 // import useFetch from '../utils/useFetch';
 import { useContext } from 'react';
 import { SearchContext } from '../context/searchContext';
+import '../Styles/Variables.css';
 
 export default function SearchBar({ handleSubmit }) {
 	const { searchTerm, setSearchTerm } = useContext(SearchContext);
