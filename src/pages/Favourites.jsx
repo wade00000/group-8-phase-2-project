@@ -21,18 +21,19 @@ export default function Favourites() {
 	if (error) return <p>Error loading favourites: {error.message}</p>;
 
 	return (
-		<div className="container mt-5">
+		<div className="container">
 			<h2 className="text-center mb-4">Your Favourites</h2>
 			{favourites?.length === 0 ? (
 				<p>No favourites yet!</p>
 			) : (
 				<div className="row">
 					{favourites.map((book) => (
-						<div key={book.id} className="col-md-4 col-sm-6 mb-4">
+						<div key={book.id} className="col-md-2 col-sm-3 mb-4">
 							<Book key={book.id} book={book} forceUpdate={forceUpdate} />
 						</div>
 					))}
 				</div>
+				
 			)}
 		</div>
 	);

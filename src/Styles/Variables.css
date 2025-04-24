@@ -5,9 +5,9 @@
   --accent: #157959;      /* Vibrant Orange */
 
   /* Background Colors */
-  --background: #f1cfcf;  /* Soft White background */
+  --background: #fffefe;  /* Soft White background */
   --navbar-background: #00897b;  /* Dark background for navbar */
-  --modal-background: #96bbb7; /* Semi-transparent black for modals */
+  --modal-background: #7fc1ba; /* Semi-transparent black for modals */
 
   /* Text Colors */
   --text-light: #ffffff;  /* White for text */
