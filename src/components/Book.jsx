@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import useFetch from '../hooks/useFetch';
+import { useState, useEffect, useContext } from 'react';
 import usePostDelete from '../hooks/usePostDelete';
 import { useLocation } from 'react-router-dom';
+import {SearchContext} from '../context/searchContext'
 import '../Styles/Book.css';
 
 export default function Book({ book, forceUpdate, searchOnly, setSelectedBook }) {
@@ -9,7 +9,7 @@ export default function Book({ book, forceUpdate, searchOnly, setSelectedBook })
   const [isClick, setIsClick] = useState(false);
 
   // Same logic for favourites
-  const { data: favourites = [] } = useFetch('http://localhost:3000/favourites');
+	const {favourites} = useContext(SearchContext)
   const { postData, deleteData } = usePostDelete();
   const location = useLocation();
 

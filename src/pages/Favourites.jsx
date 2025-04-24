@@ -3,9 +3,13 @@
 import Book from '../components/Book'; // Ensure this path is correct
 import useFetch from '../hooks/useFetch';
 import '../Styles/Favourites.css';
+import { useContext } from 'react';
+import { SearchContext } from '../context/searchContext';
 
 export default function Favourites() {
+	const { favourites, setFavourites } = useContext(SearchContext);
 	const { data: favouriteBooks = [], loading, error, forceUpdate } = useFetch('http://localhost:3000/favourites');
+	setFavourites(favouriteBooks);
     
 	if (loading) return <p>Loading favourites...</p>;
 	if (error) return <p>Error loading favourites: {error.message}</p>;
@@ -13,11 +17,11 @@ export default function Favourites() {
 	return (
 		<div className="container mt-5">
 			<h2 className="text-center mb-4">Your Favourites</h2>
-			{favouriteBooks.length === 0 ? (
+			{favourites.length === 0 ? (
 				<p>No favourites yet!</p>
 			) : (
 				<div className="row">
-					{favouriteBooks.map((book) => (
+					{favourites.map((book) => (
 						<div key={book.id} className="col-md-4 col-sm-6 mb-4">
 							<Book key={book.id} book={book} forceUpdate={forceUpdate} />
 						</div>
