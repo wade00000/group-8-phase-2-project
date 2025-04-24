@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
+import SearchBar from './SearchBar';
 import '../Styles/NavBar.css'; // Optional: your custom styles
 
-const Navbar = () => {
+const Navbar = ({handleSubmit}) => {
   return (
     <nav className="navbar">
       <NavLink 
@@ -27,6 +28,10 @@ const Navbar = () => {
         className={({ isActive }) => isActive ? 'active' : ''}>
         About
       </NavLink>
+
+      <div>
+      <SearchBar handleSubmit={handleSubmit} /> 
+      </div>
     </nav>
   );
 };

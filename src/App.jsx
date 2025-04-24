@@ -12,7 +12,7 @@ import Navbar from './components/NavBar';
 function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
-	
+
 	// useEffect(() => {
 	// 	console.log('ok');
 	// 	if (location.pathname === '/') {
@@ -43,8 +43,7 @@ function App() {
 	return (
 		<>
 			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-				<Navbar/>
-				<SearchBar handleSubmit={handleSubmit} />
+				<Navbar handleSubmit={handleSubmit}/>	
 			</header>
 			<Outlet context={searchBooks} />
 		</>

@@ -16,19 +16,19 @@ const routes = [
 			element: <Home/>,
 		  },
 		  {
-			path: '/Favourites',
+			path: 'favourites',
 			element: <Favourites />,
 		  },
 		  {
-			path: '/search',
+			path: 'search',
 			element: <SearchPage />,
 		  },
 		  {
-			path: '/collections',
+			path: 'collections',
 			element: <Collections />,
 		  },
 		  {
-			path: '/About',
+			path: 'about',
 			element: <About/>,
 		  },
 		],

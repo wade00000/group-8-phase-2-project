@@ -62,11 +62,14 @@ export default function Book({ book, forceUpdate, searchOnly, setSelectedBook })
           <p>{authors?.join(', ')}</p>
           <p>{publishedDate}</p>
           <p className="description">{description}</p>
-          <button onClick={handleClick}>
-            {isClick ? 'Remove from Favourites ★' : 'Add to Favourites ☆'}
-          </button>
         </>
       )}
+        <div>
+        <button onClick={handleClick}>
+            {isClick ? 'Remove from Favourites ★' : 'Add to Favourites ☆'}
+          </button>
+        </div>
+         
     </div>
   );
 }
