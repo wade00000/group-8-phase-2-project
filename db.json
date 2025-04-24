@@ -1,60 +1,6 @@
 {
   "favourites": [
     {
-      "id": "np4xNAEACAAJ",
-      "kind": "books#volume",
-      "etag": "i3PFh2Zyk5I",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/np4xNAEACAAJ",
-      "volumeInfo": {
-        "title": "King King",
-        "authors": [
-          "Pickersgill, Edward",
-          "Potvin, Freddie"
-        ],
-        "publishedDate": "1979",
-        "industryIdentifiers": [
-          {
-            "type": "OTHER",
-            "identifier": "OCLC:16181167"
-          }
-        ],
-        "readingModes": {
-          "text": false,
-          "image": false
-        },
-        "pageCount": 21,
-        "printType": "BOOK",
-        "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": false,
-        "contentVersion": "preview-1.0.0",
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=np4xNAEACAAJ&dq=king+intitle:king&hl=&cd=1&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=np4xNAEACAAJ&dq=king+intitle:king&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/King_King.html?hl=&id=np4xNAEACAAJ"
-      },
-      "saleInfo": {
-        "country": "KE",
-        "saleability": "NOT_FOR_SALE",
-        "isEbook": false
-      },
-      "accessInfo": {
-        "country": "KE",
-        "viewability": "NO_PAGES",
-        "embeddable": false,
-        "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED",
-        "epub": {
-          "isAvailable": false
-        },
-        "pdf": {
-          "isAvailable": false
-        },
-        "webReaderLink": "http://play.google.com/books/reader?id=np4xNAEACAAJ&hl=&source=gbs_api",
-        "accessViewStatus": "NONE",
-        "quoteSharingAllowed": false
-      }
-    },
-    {
       "id": "zeOQSYILZlMC",
       "kind": "books#volume",
       "etag": "CQdyKo+OiL8",
@@ -118,33 +64,37 @@
       }
     },
     {
-      "id": "RCowzQEACAAJ",
+      "id": "Povm0AEACAAJ",
       "kind": "books#volume",
-      "etag": "pXN7Tn7Zzjk",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/RCowzQEACAAJ",
+      "etag": "sIXYmY6MLJ8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Povm0AEACAAJ",
       "volumeInfo": {
-        "title": "You Can't Scare Me I'm A King",
-        "subtitle": "King's Family Gift Idea",
+        "title": "Lego: Harry Potter",
+        "subtitle": "Potter vs. Malfoy",
         "authors": [
-          "Family Cutey"
+          "Novelty Ediciones"
         ],
-        "publishedDate": "2019-12-27",
+        "publishedDate": "2024-08-30",
+        "description": "Sumérgete en el mágico mundo de Harry Potter y revive la legendaria rivalidad entre Potter y Malfoy con este espectacular set de LEGO.",
         "industryIdentifiers": [
           {
             "type": "ISBN_10",
-            "identifier": "1651789126"
+            "identifier": "9878151247"
           },
           {
             "type": "ISBN_13",
-            "identifier": "9781651789124"
+            "identifier": "9789878151243"
           }
         ],
         "readingModes": {
           "text": false,
           "image": false
         },
-        "pageCount": 112,
+        "pageCount": 0,
         "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
         "maturityRating": "NOT_MATURE",
         "allowAnonLogging": false,
         "contentVersion": "preview-1.0.0",
@@ -152,14 +102,10 @@
           "containsEpubBubbles": false,
           "containsImageBubbles": false
         },
-        "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=RCowzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=RCowzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-        },
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=RCowzQEACAAJ&dq=king+intitle:king&hl=&cd=2&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=RCowzQEACAAJ&dq=king+intitle:king&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/You_Can_t_Scare_Me_I_m_A_King.html?hl=&id=RCowzQEACAAJ"
+        "language": "es",
+        "previewLink": "http://books.google.com/books?id=Povm0AEACAAJ&dq=POTTER+intitle:POTTER&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Povm0AEACAAJ&dq=POTTER+intitle:POTTER&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Lego_Harry_Potter.html?hl=&id=Povm0AEACAAJ"
       },
       "saleInfo": {
         "country": "KE",
@@ -178,9 +124,12 @@
         "pdf": {
           "isAvailable": false
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=RCowzQEACAAJ&hl=&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=Povm0AEACAAJ&hl=&source=gbs_api",
         "accessViewStatus": "NONE",
         "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Sumérgete en el mágico mundo de Harry Potter y revive la legendaria rivalidad entre Potter y Malfoy con este espectacular set de LEGO."
       }
     }
   ]
