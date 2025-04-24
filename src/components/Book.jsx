@@ -1,17 +1,18 @@
 import { useState, useEffect, useContext } from 'react';
 import usePostDelete from '../hooks/usePostDelete';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import {SearchContext} from '../context/searchContext'
 import '../Styles/Book.css';
+import placeholder from '../assets/placeholder.jpg'
 
-export default function Book({ book, forceUpdate, searchOnly, setSelectedBook }) {
+export default function Book({ book, searchOnly, setSelectedBook, forceUpdate }) {
   const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;
   const [isClick, setIsClick] = useState(false);
 
   // Same logic for favourites
 	const {favourites} = useContext(SearchContext)
   const { postData, deleteData } = usePostDelete();
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     if (Array.isArray(favourites)) {
@@ -50,7 +51,7 @@ export default function Book({ book, forceUpdate, searchOnly, setSelectedBook })
     <div className={`book ${searchOnly ? 'search-only' : ''}`} onClick={handleImageClick}>
       {/* Show image only if searchOnly is true */}
       <img
-        src={imageLinks?.thumbnail}
+        src={imageLinks?.thumbnail || placeholder}
         alt={title}
         className="book-image"
       />

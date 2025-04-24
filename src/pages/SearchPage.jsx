@@ -2,10 +2,13 @@ import { useState, useContext } from 'react';
 import Book from '../components/Book';
 import { SearchContext } from '../context/searchContext';
 import '../Styles/SearchPage.css';
+import { useOutletContext } from 'react-router-dom';
+import Loader from '../components/Loader';
 
 export default function SearchPage() {
   const { searchBooks } = useContext(SearchContext);
   const [selectedBook, setSelectedBook] = useState(null);
+  const loading = useOutletContext()
 
   // This function is used to set the clicked book as selected
   const handleBookClick = (book) => {
@@ -15,6 +18,12 @@ export default function SearchPage() {
   const handleCloseModal = () => {
     setSelectedBook(null); // Close the modal by setting selectedBook to null
   };
+
+  if (loading) return <Loader />
+
+  if (searchBooks === null) {
+    return <p>Search for your favourite book</p>; // Show loading state if searchBooks is not available
+  }
 
   return (
     <div className="container mt-5">
