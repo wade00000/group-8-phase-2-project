@@ -1,3 +1,260 @@
 {
-  "favourites": []
+  "favourites": [
+    {
+      "id": "np4xNAEACAAJ",
+      "kind": "books#volume",
+      "etag": "i3PFh2Zyk5I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/np4xNAEACAAJ",
+      "volumeInfo": {
+        "title": "King King",
+        "authors": [
+          "Pickersgill, Edward",
+          "Potvin, Freddie"
+        ],
+        "publishedDate": "1979",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OCLC:16181167"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 21,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=np4xNAEACAAJ&dq=king+intitle:king&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=np4xNAEACAAJ&dq=king+intitle:king&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/King_King.html?hl=&id=np4xNAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=np4xNAEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "id": "zeOQSYILZlMC",
+      "kind": "books#volume",
+      "etag": "CQdyKo+OiL8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/zeOQSYILZlMC",
+      "volumeInfo": {
+        "title": "The History of the King and the Cobbler. In Two Parts, ... A New Edition, Carefully Corrected",
+        "authors": [
+          "Henry VIII (King of England)"
+        ],
+        "publishedDate": "1804",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BL:A0025219119"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 24,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.5.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=zeOQSYILZlMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=zeOQSYILZlMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=zeOQSYILZlMC&printsec=frontcover&dq=king+intitle:king&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=zeOQSYILZlMC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=zeOQSYILZlMC"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=zeOQSYILZlMC&rdid=book-zeOQSYILZlMC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/The_History_of_the_King_and_the_Cobbler.epub?id=zeOQSYILZlMC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=zeOQSYILZlMC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "id": "RCowzQEACAAJ",
+      "kind": "books#volume",
+      "etag": "pXN7Tn7Zzjk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/RCowzQEACAAJ",
+      "volumeInfo": {
+        "title": "You Can't Scare Me I'm A King",
+        "subtitle": "King's Family Gift Idea",
+        "authors": [
+          "Family Cutey"
+        ],
+        "publishedDate": "2019-12-27",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1651789126"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781651789124"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 112,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=RCowzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=RCowzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=RCowzQEACAAJ&dq=king+intitle:king&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=RCowzQEACAAJ&dq=king+intitle:king&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/You_Can_t_Scare_Me_I_m_A_King.html?hl=&id=RCowzQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=RCowzQEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "id": "66XODwAAQBAJ",
+      "kind": "books#volume",
+      "etag": "E+LKfITtabo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/66XODwAAQBAJ",
+      "volumeInfo": {
+        "title": "LSAT Logic Games",
+        "authors": [
+          "Manhattan Prep"
+        ],
+        "publisher": "Manhattan Prep",
+        "publishedDate": "2020-03-03",
+        "description": "Manhattan Prep’s LSAT Logic Games guide, fully updated for the digital exam, is an essential tool for the LSAT section that everyone loves to hate. Manhattan Prep’s LSAT guides use officially-released LSAT questions and are written by the company’s instructors, who have all scored a 172 or higher on the official LSAT—we know how to earn a great score and we know how to teach you to do the same. This guide will train you to approach LSAT logic games as a 99th-percentile test-taker does: Recognize every type of game Make valid inferences Diagram quickly and accurately Predict correct answers and spot trap answers Take advantage of the digital format to work quickly and strategically You will have access to many practice problems and extensive solutions: Timed drill sets made up of real LSAT questions to help you absorb and apply what you’ve learned In-depth solutions, including hand-drawn diagrams and step-by-step analysis",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781506265629"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1506265626"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 675,
+        "printType": "BOOK",
+        "categories": [
+          "Study Aids"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=66XODwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=66XODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=66XODwAAQBAJ&pg=PA255&dq=featured&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=66XODwAAQBAJ&dq=featured&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/LSAT_Logic_Games.html?hl=&id=66XODwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=66XODwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>featured</b> on day 1 . No breed is <b>featured</b> on any two consecutive days . Any breed <b>featured</b> on day 1 is not <b>featured</b> on day 7 . Himalayans are <b>featured</b> on exactly three days , but not on day 1 . Rottweilers are not <b>featured</b> on day 7 , nor&nbsp;..."
+      }
+    }
+  ]
 }

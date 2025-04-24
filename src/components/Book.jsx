@@ -4,6 +4,7 @@ import usePostDelete from '../hooks/usePostDelete';
 import {SearchContext} from '../context/searchContext'
 import '../Styles/Book.css';
 import placeholder from '../assets/placeholder.jpg'
+import '../Styles/Variables.css';
 
 export default function Book({ book, searchOnly, setSelectedBook, forceUpdate }) {
   const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;

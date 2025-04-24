@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { CollectionProvider } from './context/collectionContext.jsx';
 import './Styles/Loader.css'
 
+
 const router = createBrowserRouter(routes)
 
 createRoot(document.getElementById('root')).render(

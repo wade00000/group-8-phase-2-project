@@ -10,6 +10,7 @@ import Navbar from './components/NavBar';
 import useFetch from './hooks/useFetch';
 
 
+
 function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
@@ -43,11 +44,13 @@ function App() {
 
 	return (
 		<>
-			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-				<Navbar handleSubmit={handleSubmit} handleChange={handleChange}/>	
-			</header>
-			<Outlet context={loading}/>
-		</>
+  <Navbar handleSubmit={handleSubmit}  handleChange={handleChange} />	
+
+  <main className="main-content">
+  <Outlet context={loading}/>
+  </main>
+</>
+
 	);
 }
 
