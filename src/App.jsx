@@ -2,11 +2,12 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import SearchBar from './components/SearchBar';
 import { useContext, useEffect } from 'react';
 import { SearchContext } from './context/searchContext';
-import axios from 'axios';
+// import axios from 'axios';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CollectionContext } from './context/collectionContext';
 import Navbar from './components/NavBar';
+import useFetch from './hooks/useFetch';
 
 
 function App() {
@@ -20,32 +21,32 @@ function App() {
 	// 	}
 	// }, [location, navigate]);
 
-	const { searchTerm,searchBooks, setSearchBooks } = useContext(SearchContext);
+	const { searchTerm, setSearchTerm, searchUrl, setSearchBooks } = useContext(SearchContext);
+	const { data,loading, error ,fetchData: fetchBooks} = useFetch(searchUrl)
+	setSearchBooks(data?.items || null);
 
-	// Used this function instead of useFetch since useFetch could only work inside a custom hook or a component, and not in a function or conditional statement
-	const fetchData = async (url) => {
-		try {
-			const json = await axios.get(url);
-			setSearchBooks(json.data.items); // Save the data
-		} catch (error) {
-			console.error('Fetch error:', error);
-		}
-	};
+	if (error) return <p>Fetch Error!</p>
 
 	function handleSubmit(e) {
 		e.preventDefault();
-		fetchData(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}+intitle:${searchTerm}&maxResults=40&key=AIzaSyBLGLvEaYHQiD2M_GxpYbcHCGtw_6sfVi4`);
+		searchUrl.current = `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}+intitle:${searchTerm}&maxResults=40&key=AIzaSyBLGLvEaYHQiD2M_GxpYbcHCGtw_6sfVi4`
+		console.log({searchUrl ,searchTerm})
+		fetchBooks()
 		if (location.pathname !== '/search') {
 			navigate('/search');
 		}
 	}
 
+	function handleChange(e) {
+		setSearchTerm(e.target.value)
+	}	
+
 	return (
 		<>
 			<header style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-				<Navbar handleSubmit={handleSubmit}/>	
+				<Navbar handleSubmit={handleSubmit} handleChange={handleChange}/>	
 			</header>
-			<Outlet context={searchBooks} />
+			<Outlet context={loading}/>
 		</>
 	);
 }
