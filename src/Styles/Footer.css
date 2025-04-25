@@ -1,0 +1,143 @@
+/* Footer container */
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #00897b;
+  margin-bottom: 0;
+}
+
+/* Branding section, displaying elements vertically */
+.footer .d-flex {
+  display: flex; /* Flexbox for vertical arrangement */
+  flex-direction: column; /* Arrange elements vertically */
+  align-items: center; /* Horizontally center the items */
+  gap: 1rem; /* Space between logo and text */
+}
+
+/* Logo styling */
+.footer-logo {
+  width: 150px;  /* Adjust the size of the logo */
+  height: auto;
+  margin-top: -20px;
+  display: block;border-radius: 50%; /* Optional: Round corners if logo has square edges */
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* White glowing effect */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Branding text styling */
+.footer h5 {
+  font-size: 1.75rem; /* Size for "Open Library" text */
+  margin-bottom: 0.5rem; /* Space between the heading and paragraph */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the heading */
+}
+
+/* Styling for the footer paragraph */
+.footer-description {
+  font-size: 1rem; /* Size for the description text */
+  color: #ffffff; /* Lighter text color */
+  text-align: center; /* Center-align the paragraph */
+}
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 120px; /* Smaller logo size on mobile */
+  }
+
+  .footer h5 {
+    font-size: 1.5rem; /* Adjust font size for "Open Library" */
+  }
+
+  .footer-description {
+    font-size: 0.875rem; /* Smaller font size for the paragraph */
+  }
+}
+
+.footer-logo:hover {
+  box-shadow: 0 0 25px 10px rgba(255, 255, 255, 1); /* Bigger glow on hover */
+}
+
+/* Contact Info Section Styling */
+.col-md-3.mb-4 {
+  color: white; /* Set text color to white */
+}
+
+.col-md-3.mb-4 h6 {
+  font-size: 1.25rem;  /* Set the size of the header */
+  font-weight: bold;   /* Bold header */
+  margin-bottom: 10px; 
+  /* Space below the header */
+}
+
+.col-md-3.mb-4 p {
+  font-size: 0.875rem; /* Smaller font size for paragraphs */
+  margin-bottom: 5px;  /* Space between paragraphs */
+}
+
+.col-md-3.mb-4 p.mb-0 {
+  margin-bottom: 0;  /* Removes margin from the last paragraph */
+}
+
+.col-md-3.mb-4 .small {
+  color: rgb(255, 255, 255);
+  margin-right:80px;
+  text-align: center;
+  justify-content: center; /* Slightly transparent white for smaller text */
+}
+
+.col-md-3.mb-4 .small-2 {
+  color: rgb(255, 255, 255);
+  margin-right:105px;
+  text-align: center;
+  justify-content: center; /* Slightly transparent white for smaller text */
+}
+
+/* Social Media Section Styling (Vertical Layout) */
+.col-md-3.mb-4 h6 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.col-md-3.mb-4 .d-flex {
+  flex-direction: column; /* Makes icons stack vertically */
+  align-items: flex-start;
+  gap: 15px; /* Space between icons */
+}
+
+.col-md-3.mb-4 .d-flex a {
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.col-md-3.mb-4 .d-flex a:hover {
+  color: #00aced;
+  transform: scale(1.2);
+}
+
+.col-md-3.mb-4 .d-flex a svg {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
+}
+
+.footer .container {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.footer .row {
+  margin-bottom: 0;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.881);
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0 !important;
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+}
+

@@ -64,7 +64,7 @@
 	margin-bottom: 1rem;
   }
   
-  .container mt-5{
+  .container{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
   }
@@ -100,5 +100,79 @@
   
   .favourite-btn:hover {
 	background: var(--primary);
+  }
+  
+ /* Common Styles for the Explore Text (Both Featured and Recent) */
+.explore-text {
+	text-align: center;
+	font-size: 1rem;  /* Smaller font size than Recent and Featured */
+	color: #555;
+	font-weight: 300;  /* Lighter weight */
+	text-transform: uppercase;
+	margin-right: 860px;
+  }
+  
+  /* Specific styles for the "Explore the latest books" text */
+  .featured-text {
+	color: #2d3748; /* Dark color for Featured Books */
+	font-size: 1rem; /* Slightly larger than recent-text */
+	font-weight: 200;
+	margin-top: -10px; /* Light weight, but still uppercase */
+	
+  }
+  
+  /* Specific styles for the "Explore the newest books" text */
+  .recent-text {
+	color: #00897b; /* Accent color for Recent Books */
+	font-size: 1.1rem; /* Slightly larger than featured-text */
+	font-weight: 300; /* Light weight, but still uppercase */
+  }
+  
+  /* Adjust section titles */
+  .section-title {
+	text-align: center;
+	color: #2d3748;
+	font-size: 2rem;
+	margin-right: 890px;
+	margin-top: -60px;
+	
+  }
+
+  .section-title-2{
+	text-align: center;
+	color: #2d3748;
+	font-size: 2rem;
+	margin-right: 850px;
+	
+  }
+  
+  
+  /* Add some padding between images */
+  .book-thumbnail {
+	padding: 10px;
+  }
+  
+  /* 🔸 For "Explore the latest books" under Featured Books */
+.explore-latest {
+	text-align: center;
+	font-size: 0.75rem;
+	color: #444;
+	margin-top: -10px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-right: 905px;
+  }
+  
+  /* 🔹 For "Explore the newest books" under Recent Books */
+  .explore-newest {
+	text-align: center;
+	font-size: 0.75rem;
+	color: #090909;
+	margin-top: -10px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-right: 905px;
   }
   

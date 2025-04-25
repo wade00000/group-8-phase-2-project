@@ -1,0 +1,55 @@
+.carousel-banner {
+  position: relative;
+  width: 100vw; /* Full width of the viewport */
+  height: 300px; /* Adjust the height as necessary */
+  overflow: hidden;
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  border-radius: 0; /* Optional: remove border-radius to make it sharp-edged */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional: for some shadow effect */
+  left: 50%; /* Center the banner */
+  transform: translateX(-50%); /* Center the banner */
+}
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: stretch;
+    filter: brightness(70%);
+    transition: opacity 1s ease-in-out;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #fff;
+  }
+  
+  .banner-overlay h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .banner-overlay p {
+    font-size: 1rem;
+    margin-top: 6px;
+  }
+  
+  /* Style for Banner2 */
+.banner2-container {
+  width: 100%;
+  padding: 0;
+  /* Adjust the top margin for spacing */
+}
+
+.banner2-image {
+  width: 100%; /* Ensure it stretches across the full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container without stretching */
+  border-radius: 16px; /* Optional rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1); /* Optional shadow for styling */
+  margin-top: 20px;
+}
