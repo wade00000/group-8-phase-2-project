@@ -51,7 +51,9 @@ function App() {
   <main className="main-content">
   <Outlet context={loading}/>
   </main>
+
   <Footer />
+
 </>
 
 	);
