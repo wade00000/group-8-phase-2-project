@@ -1,4 +1,3 @@
-import React from 'react';
 // components/Footer.js
 import { Facebook, Twitter, Instagram, BookOpen } from 'lucide-react';
 
@@ -11,9 +10,9 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h6 className="mb-3">Quick Links</h6>
             <ul className="list-unstyled">
-              <li><a href="/about" className="text-muted text-decoration-none">About Us</a></li>
-              <li><a href="/browse" className="text-muted text-decoration-none">Browse Books</a></li>
-              <li><a href="/contact" className="text-muted text-decoration-none">Contact</a></li>
+              <li><a href="/about" className=" text-decoration-none text-light">About Us</a></li>
+              <li><a href="/" className=" text-decoration-none text-light">Browse Books</a></li>
+              <li><a href="/favourites" style={{color: 'blue'}} className=" text-decoration-none text-light">Favourites</a></li>
             </ul>
           </div>
 
@@ -35,7 +34,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="text-center mt-4 border-top pt-3 text-muted small">
+        <div className="text-center mt-4 border-top pt-3 small text-light">
           &copy; {new Date().getFullYear()} BookShare. All rights reserved.
         </div>
       </div>
