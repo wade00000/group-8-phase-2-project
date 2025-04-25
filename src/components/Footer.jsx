@@ -39,16 +39,17 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 mb-4 contact-section">
             <h6 className="mb-3">Contact</h6>
             <p className="mb-1 small">Email: support@openlibrary.com</p>
             <p className="mb-0 small-2">Phone: +254 (000) 123-4567</p>
           </div>
 
+
           {/* Social Media */}
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 mb-4 follow-us-section">
             <h6 className="mb-3">Follow Us</h6>
-            <div className="d-flex gap-3">
+            <div className="d-flex gap-1">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-light">
                 <Facebook />
               </a>

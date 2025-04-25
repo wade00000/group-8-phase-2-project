@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import '../Styles/NavBar.css'; // Optional: your custom styles
@@ -14,10 +15,13 @@ const Navbar = ({handleSubmit, handleChange}) => {
   const {searchTerm} = useContext(SearchContext)
   return (
     <nav className="navbar">
-  <div className="navbar-left">
-  <img src={logo} alt="Logo" className="logo" />
-  <span className="site-title">Open Library</span>
-  </div>
+    <div className="navbar-left">
+      {/* The Link component will make the title clickable and navigate to /home */}
+      <Link to="/" className="navbar-logo">
+        <img src={logo} alt="Logo" className="logo" />
+        <span className="site-title">Open Library</span>
+      </Link>
+    </div>
 
   <div className="navbar-center">
     <SearchBar handleSubmit={handleSubmit} handleChange={handleChange} value={searchTerm} />

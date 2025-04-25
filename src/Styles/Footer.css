@@ -1,18 +1,23 @@
 /* Footer container */
+
 .footer {
+  font-family: 'Roboto', sans-serif; 
   padding-top: 2rem;
   padding-bottom: 1rem;
   background-color: #00897b;
   margin-bottom: 0;
+  margin-top: 3rem; /* ✅ Add this line */
 }
+
 
 /* Branding section, displaying elements vertically */
 .footer .d-flex {
-  display: flex; /* Flexbox for vertical arrangement */
-  flex-direction: column; /* Arrange elements vertically */
-  align-items: center; /* Horizontally center the items */
-  gap: 1rem; /* Space between logo and text */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; 
+  padding-top: 10px;/* ✅ Centers the block horizontally */
 }
+
 
 /* Logo styling */
 .footer-logo {
@@ -21,22 +26,25 @@
   margin-top: -20px;
   display: block;border-radius: 50%; /* Optional: Round corners if logo has square edges */
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8); /* White glowing effect */
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px; /* Smooth transition for hover effect */
 }
 
 /* Branding text styling */
 .footer h5 {
   font-size: 1.75rem; /* Size for "Open Library" text */
-  margin-bottom: 0.5rem; /* Space between the heading and paragraph */
+  margin-bottom: -50px; /* Space between the heading and paragraph */
   color: #fff; /* White text color */
-  text-align: center; /* Center-align the heading */
+  text-align: center;
+   /* Center-align the heading */
 }
 
 /* Styling for the footer paragraph */
 .footer-description {
   font-size: 1rem; /* Size for the description text */
   color: #ffffff; /* Lighter text color */
-  text-align: center; /* Center-align the paragraph */
+  text-align: center; 
+  margin-bottom: 0;/* Center-align the paragraph */
 }
 
 /* Mobile responsiveness for smaller screens */
@@ -81,14 +89,14 @@
 
 .col-md-3.mb-4 .small {
   color: rgb(255, 255, 255);
-  margin-right:80px;
+  margin-right:10px;
   text-align: center;
   justify-content: center; /* Slightly transparent white for smaller text */
 }
 
 .col-md-3.mb-4 .small-2 {
   color: rgb(255, 255, 255);
-  margin-right:105px;
+  margin-right:10px;
   text-align: center;
   justify-content: center; /* Slightly transparent white for smaller text */
 }
@@ -102,10 +110,13 @@
 }
 
 .col-md-3.mb-4 .d-flex {
-  flex-direction: column; /* Makes icons stack vertically */
-  align-items: flex-start;
-  gap: 15px; /* Space between icons */
+  flex-direction: row; /* Icons in a row */
+  justify-content: center; /* ✅ Center horizontally */
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
+
 
 .col-md-3.mb-4 .d-flex a {
   font-size: 1.5rem;
@@ -114,9 +125,10 @@
 }
 
 .col-md-3.mb-4 .d-flex a:hover {
-  color: #00aced;
-  transform: scale(1.2);
+  color: #00ffcc;
+  transform: scale(1.1);
 }
+
 
 .col-md-3.mb-4 .d-flex a svg {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
@@ -141,3 +153,90 @@
   text-align: center;
 }
 
+.col-md-2.mb-4 {
+  padding-top: 10px;
+   /* or use margin-top if you prefer */
+}
+
+/* Contact Info Section */
+.footer .contact-section {
+  padding-top: 10px;
+}
+
+/* Follow Us Section */
+.footer .follow-us-section {
+  padding-top: 10px;
+  
+}
+/* Quick Links Section */
+.footer .col-md-2.mb-4 h6 {
+  font-size: 1.25rem; /* Adjust header font size for "Quick Links" */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white; /* Increase the size of the "Quick Links" heading */
+}
+
+.footer .col-md-2.mb-4 ul li a {
+  font-size: 1.0rem; /* Increase the font size of the links */
+}
+
+
+.footer .col-md-2.mb-4 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .col-md-2.mb-4 ul li {
+  font-size: 1.1rem; /* Set font size for Quick Links */
+  margin-bottom: 8px;
+}
+.footer .col-md-2.mb-4 ul li a:hover {
+  color: #0ee2b8; /* Change link color on hover */
+}
+
+/* Contact Section */
+.footer .col-md-3.mb-4 {
+  font-family: 'Roboto', sans-serif; /* Apply font to the entire Contact section */
+}
+
+.footer .col-md-3.mb-4 h6 {
+  font-size: 1.25rem; /* Adjust font size for the "Contact" header */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer .col-md-3.mb-4 p {
+  font-size: 1rem; /* Adjust font size for paragraphs in Contact section */
+  color: white; /* Ensure text color is white */
+  margin-bottom: 5px; /* Space between paragraphs */
+}
+
+.footer .col-md-3.mb-4 .small,
+.footer .col-md-3.mb-4 .small-2 {
+  color: white; /* Ensure small text is also white */
+  font-size:1.0rem; /* Set font size for small text */
+}
+
+/* Follow Us Section */
+.footer .col-md-3.mb-4 h6 {
+  font-size: 1.25rem; /* Adjust font size for the "Follow Us" header */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer .col-md-3.mb-4 .d-flex a {
+  font-size: 1.0rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .col-md-3.mb-4 .d-flex a:hover {
+  color: #00aced;
+  transform: scale(1.2);
+}
+
+.footer .col-md-3.mb-4 .d-flex a svg {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
+}

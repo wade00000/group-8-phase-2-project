@@ -157,11 +157,11 @@
 	text-align: center;
 	font-size: 0.75rem;
 	color: #444;
-	margin-top: -10px;
+	
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	margin-right: 905px;
+	margin-right: 900px;
   }
   
   /* 🔹 For "Explore the newest books" under Recent Books */
@@ -169,7 +169,7 @@
 	text-align: center;
 	font-size: 0.75rem;
 	color: #090909;
-	margin-top: -10px;
+	
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 1px;
