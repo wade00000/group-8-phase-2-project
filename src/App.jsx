@@ -12,6 +12,7 @@ import useFetch from './hooks/useFetch';
 
 
 function App() {
+
 	const location = useLocation();
 	const navigate = useNavigate();
 
