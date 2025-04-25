@@ -1,0 +1,70 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--navbar-background); /* Dark background for contrast */
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px var(--shadow-light);
+  color: var(--text-light);  /* White text for contrast */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;  /* Center everything inside the navbar */
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.navbar-content a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-content a:hover,
+.navbar-content a:focus {
+  color: var(--secondary); /* Electric Pink on hover */
+}
+
+.navbar-content .active {
+  color: var(--accent); /* Vibrant orange for active link */
+  font-weight: 600;
+}
+
+.navbar-content input[type="search"] {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--accent);  /* Vibrant orange for search input */
+  font-size: 1rem;
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.navbar-content input[type="search"]:focus {
+  width: 250px;
+  outline: none;
+  border-color: var(--accent);
+}
+
+@media (max-width: 1080px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navbar-content input[type="search"] {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.main-content {
+  padding-top: 80px;
+  background-color: var(--background); /* Light background */
+}
