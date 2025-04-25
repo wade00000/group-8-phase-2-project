@@ -21,7 +21,7 @@ function App() {
         ,[count])}
         <h2>{count}</h2>
       </div>
-      
+      <footer />
     </>
   )
 }
