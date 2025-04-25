@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { CollectionContext } from './context/collectionContext';
 import Navbar from './components/NavBar';
 import useFetch from './hooks/useFetch';
+import Footer from './components/Footer';
 
 
 
@@ -50,7 +51,9 @@ function App() {
   <main className="main-content">
   <Outlet context={loading}/>
   </main>
-  
+
+  <Footer />
+
 </>
 
 	);
