@@ -1,10 +1,17 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 const CollectionContext = createContext();
 
 function CollectionProvider({ children }) {
-  const [collectionBooks, setCollectionBooks] = useState([]);
-  const [favourites, setFavourites] = useState([]); // <-- Add favourites here
+  // Load collection from localStorage if it exists
+  const storedBooks = JSON.parse(localStorage.getItem('collectionBooks')) || [];
+  const [collectionBooks, setCollectionBooks] = useState(storedBooks);
+  const [favourites, setFavourites] = useState([]);
+
+  // Save collectionBooks to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('collectionBooks', JSON.stringify(collectionBooks));
+  }, [collectionBooks]);
 
   return (
     <CollectionContext.Provider

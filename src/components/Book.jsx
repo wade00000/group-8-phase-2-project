@@ -5,6 +5,7 @@ import '../Styles/Book.css';
 import placeholder from '../assets/placeholder.jpg';
 import '../Styles/Variables.css';
 import { useLocation } from 'react-router-dom';
+import { CollectionContext } from '../context/collectionContext';
 
 export default function Book({ book, searchOnly, setSelectedBook, forceUpdate }) {
   const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;
@@ -12,6 +13,7 @@ export default function Book({ book, searchOnly, setSelectedBook, forceUpdate })
   const { favourites } = useContext(SearchContext);
   const { postData, deleteData } = usePostDelete();
   const location = useLocation();
+ 
 
   useEffect(() => {
     if (Array.isArray(favourites)) {
@@ -46,6 +48,19 @@ export default function Book({ book, searchOnly, setSelectedBook, forceUpdate })
     }
   };
 
+  const handleAddToCollection = async (book) => {
+    const alreadyInCollection = collectionBooks.some(b => b.id === book.id);
+    if (alreadyInCollection) return; //Avoid duplicates
+  
+    try {
+      await postData('http://localhost:3000/collections', book);
+      setCollectionBooks([...collectionBooks, book]); // Update local state
+    } catch (err) {
+      console.error('Failed to add to collection:', err);
+    }
+  };
+  
+
   return (
     <div className={`book ${searchOnly ? 'search-only' : ''}`} onClick={handleImageClick}>
       <img
@@ -66,6 +81,7 @@ export default function Book({ book, searchOnly, setSelectedBook, forceUpdate })
             <button onClick={handleClick}>
               {isClick ? 'Remove from Favourites ★' : 'Add to Favourites ☆'}
             </button>
+           
           </div>
         </>
       )}

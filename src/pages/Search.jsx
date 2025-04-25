@@ -5,6 +5,7 @@ import '../Styles/SearchPage.css';
 import { useOutletContext } from 'react-router-dom';
 import Loader from '../components/Loader';
 import AddToFavouritesButton from '../components/AddToFavouritesButton';
+import AddToCollectionButton from '../components/AddToCollectionButton';
 import '../Styles/Modal.css';
 
 export default function Search() {
@@ -76,6 +77,7 @@ export default function Search() {
                  Read Preview
                </a>
                <AddToFavouritesButton book={selectedBook} />
+               <AddToCollectionButton book={selectedBook}/>
              </div>
            </div>
            <div className="modal-description">

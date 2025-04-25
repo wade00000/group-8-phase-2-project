@@ -35,5 +35,6 @@ export default function AddToFavouritesButton({ book }) {
     <button onClick={handleClick} className="favourite-btn">
       {isClick ? '★ Remove from Favourites' : '☆ Add to Favourites'}
     </button>
+    
   );
 }
