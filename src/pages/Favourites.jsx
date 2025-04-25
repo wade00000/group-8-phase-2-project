@@ -9,12 +9,12 @@ import Loader from '../components/Loader';
 
 export default function Favourites() {
 	const { favourites, setFavourites } = useContext(SearchContext);
-	const { data: favouriteBooks = [], loading, error, fetchData, forceUpdate} = useFetch('http://localhost:3000/favourites');
+	const { data: favouriteBooks = [], loading, error, fetchData, update, forceUpdate} = useFetch('http://localhost:3000/favourites');
 
 	// fetchData()
 	useEffect(() => {
 		fetchData();
-	}, []);
+	}, [update]);
 	setFavourites(favouriteBooks);
 
 	if (loading || favourites === null) return <Loader />;

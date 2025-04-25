@@ -1,6 +1,6 @@
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import SearchBar from './components/SearchBar';
-import { useContext, useEffect } from 'react';
+import { useContext} from 'react';
 import { SearchContext } from './context/searchContext';
 // import axios from 'axios';
 import { Link } from 'react-router-dom';
