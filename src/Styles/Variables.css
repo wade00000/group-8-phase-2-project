@@ -19,6 +19,6 @@
   --button-hover: #157959;             /* Darker orange for button hover */
 
   /* Shadows */
-  --shadow-light: rgba(0, 0, 0, 0.1);  /* Light shadow */
+  --shadow-light: rgba(5, 4, 4, 0.1);  /* Light shadow */
   --shadow-dark: rgba(0, 0, 0, 0.3);   /* Darker shadow for modals */
 }
