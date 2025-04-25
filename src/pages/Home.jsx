@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import '../Styles/SearchPage.css';
 import axios from 'axios';
 import AddToFavouritesButton from '../components/AddToFavouritesButton';
+import '../Styles/Modal.css';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
@@ -49,25 +50,42 @@ export default function Home() {
       ) : (
         <p>Loading featured books...</p>
       )}
-
-      {selectedBook && (
-        <div className="overlay" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <h2>{selectedBook.volumeInfo.title}</h2>
-            <img
-              src={selectedBook.volumeInfo.imageLinks?.thumbnail}
-              alt={selectedBook.volumeInfo.title}
-              className="modal-image"
-            />
-            <p>{selectedBook.volumeInfo.description}</p>
-      
-            {/* ✅ Add Favourite Button in Modal */}
-            <AddToFavouritesButton book={selectedBook} />
-      
-            <button onClick={handleCloseModal} className="close-btn">Close</button>
-          </div>
+{selectedBook && (
+  <div className="overlay" onClick={handleCloseModal}>
+    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <button className="close-btn" onClick={handleCloseModal}>×</button>
+      <div className="modal-header">
+        <img
+          src={selectedBook.volumeInfo.imageLinks?.thumbnail}
+          alt={selectedBook.volumeInfo.title}
+          className="modal-image"
+        />
+        <div className="modal-text">
+          <h2>{selectedBook.volumeInfo.title}</h2>
+          <p className="modal-author">
+            {selectedBook.volumeInfo.authors?.join(', ') || 'Unknown Author'}
+          </p>
+          <p className="modal-meta">
+            {selectedBook.volumeInfo.publishedDate} · {selectedBook.volumeInfo.pageCount || 'N/A'} pages
+          </p>
+          <a
+            href={selectedBook.volumeInfo.previewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="preview-btn"
+          >
+            Read Preview
+          </a>
+          <AddToFavouritesButton book={selectedBook} />
         </div>
-      )}
+      </div>
+      <div className="modal-description">
+        <p>{selectedBook.volumeInfo.description || "No description available."}</p>
+      </div>
+    </div>
+  </div>
+)}
+
     </div>
   );
 }
