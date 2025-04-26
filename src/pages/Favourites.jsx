@@ -41,7 +41,7 @@ export default function Favourites() {
 				<p>No favourites yet!</p>
 			) : (
 				<div className="row">
-               {console.log(favourites)}
+               
 					{
 					favourites.map((book) => (
 						<div
