@@ -9,7 +9,7 @@ import '../Styles/Modal.css';
 
 export default function Favourites() {
 	const { favourites, setFavourites } = useContext(SearchContext);
-	const { data: favouriteBooks = [], loading, error, fetchData, update } = useFetch('http://localhost:3000/favourites');
+	const { data: favouriteBooks = [], loading, error, fetchData, update } = useFetch('http://localhost:10000/favourites');//uses a render.com server
 
 	// State for the modal
 	const [selectedBook, setSelectedBook] = useState(null);
