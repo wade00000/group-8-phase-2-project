@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
-import '../Styles/SearchPage.css';
-import '../Styles/Modal.css';
 import BannerCarousel from '../components/BannerCarousel';
 import AddToFavouritesButton from '../components/AddToFavouritesButton';
-import AddToCollectionButton from '../components/AddToCollectionButton';
-import '../Styles/BannerCarousel.css';
+import axios from 'axios';
 import BannerImage from '../assets/Banner5.jpg';
 import Banner2 from '../assets/Banner6.jpg'; // Import Banner2 image
+import '../Styles/SearchPage.css';
+import '../Styles/Modal.css';
+import '../Styles/BannerCarousel.css';
+
 
 
 

@@ -1,11 +1,8 @@
-// import useFetch from '../utils/useFetch';
-// import { useContext } from 'react';
-import { SearchContext } from '../context/searchContext';
 import '../Styles/Variables.css';
-import '../Styles/Searchbar.css'; // Optional: your custom styles
+import '../Styles/Searchbar.css'; 
 
 export default function SearchBar({ handleSubmit, value, handleChange }) {
-	// const { searchTerm, setSearchTerm } = useContext(SearchContext);
+	
 
 	return (
 		<form onSubmit={handleSubmit} className="search-bar">

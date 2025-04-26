@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Styles/About.css';  // Import your updated CSS file
 import reactImage from '../assets/React.png';
 import nodeImage from '../assets/Node.png';
 import cssImage from '../assets/Css.png';
@@ -8,6 +7,7 @@ import wade from '../assets/wade.jpeg'
 import patrick from '../assets/patrick.jpeg'
 import esther from '../assets/esther.webp'
 import golda from '../assets/golda.jpg'
+import '../Styles/About.css';  
 
 const About = () => {
   return (

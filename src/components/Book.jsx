@@ -1,11 +1,12 @@
 import { useState, useEffect, useContext } from 'react';
-import usePostDelete from '../hooks/usePostDelete';
 import { SearchContext } from '../context/searchContext';
-import '../Styles/Book.css';
+import { useLocation } from 'react-router-dom';
+import usePostDelete from '../hooks/usePostDelete';
 import placeholder from '../assets/placeholder.jpg';
 import '../Styles/Variables.css';
-import { useLocation } from 'react-router-dom';
-import { CollectionContext } from '../context/collectionContext';
+import '../Styles/Book.css';
+
+
 
 export default function Book({ book, searchOnly, setSelectedBook, forceUpdate }) {
   const { title, authors, publishedDate, description, imageLinks } = book.volumeInfo;

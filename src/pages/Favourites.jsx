@@ -1,10 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import { SearchContext } from '../context/searchContext';
-import useFetch from '../hooks/useFetch';
-import '../Styles/Favourites.css';
-import Book from '../components/Book';
-import Loader from '../components/Loader';
 import AddToFavouritesButton from '../components/AddToFavouritesButton';
+import useFetch from '../hooks/useFetch';
+import Loader from '../components/Loader';
+import '../Styles/Favourites.css';
 import '../Styles/Modal.css';
 
 export default function Favourites() {

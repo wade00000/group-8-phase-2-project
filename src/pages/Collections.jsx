@@ -1,8 +1,9 @@
-import useFetch from '../hooks/useFetch';
-import Book from '../components/Book';
-import Loader from '../components/Loader';
 import { useContext, useEffect } from 'react';
 import { CollectionContext } from '../context/collectionContext';
+import useFetch from '../hooks/useFetch';
+import Loader from '../components/Loader';
+import Book from '../components/Book';
+
 
 export default function Collections() {
   const { data, loading, error } = useFetch('http://localhost:3000/collections');

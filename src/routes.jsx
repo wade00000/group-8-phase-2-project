@@ -1,7 +1,7 @@
 import App from './App';
 import Favourites from './pages/Favourites';
 import SearchPage from './pages/Search';
-import Collections from './pages/Collections'; // Adjust path if needed
+import Collections from './pages/Collections'; 
 import About from './pages/About';
 import Home from './pages/Home';
 

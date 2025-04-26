@@ -1,13 +1,16 @@
-import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-import SearchBar from './SearchBar';
-import '../Styles/NavBar.css'; // Optional: your custom styles
-import '../Styles/Variables.css';
 import { useContext } from 'react';
 import { SearchContext } from '../context/searchContext';
-import '../Styles/Searchbar.css';
-import logo from '../assets/logo.jpg';
 import { FaUserCircle } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar';
+import logo from '../assets/logo.jpg';
+import '../Styles/NavBar.css'; 
+import '../Styles/Variables.css';
+import '../Styles/Searchbar.css';
+
+
+
 
 
 

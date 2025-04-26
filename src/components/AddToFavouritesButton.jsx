@@ -3,6 +3,8 @@ import { SearchContext } from '../context/searchContext';
 import usePostDelete from '../hooks/usePostDelete';
 import { useLocation } from 'react-router-dom';
 import '../Styles/SearchPage.css';
+
+
 export default function AddToFavouritesButton({ book, className = '', closeModal }) {
   const { favourites } = useContext(SearchContext);
   const { postData, deleteData } = usePostDelete();

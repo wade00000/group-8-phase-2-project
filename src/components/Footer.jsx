@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, BookOpen } from 'lucide-react';
+import { Facebook, Twitter, Instagram} from 'lucide-react';
 import React from 'react';
 import '../Styles/Footer.css'; 
 import logo from '../assets/logo.jpg';
