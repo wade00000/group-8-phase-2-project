@@ -1,0 +1,157 @@
+/* Favourites.css */
+
+/* Main container */
+.container {
+  margin-top: 0; /* Remove any default margin from the top */
+  padding-bottom: 50px;
+}
+
+/* Title styling */
+h2.text-center {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0; /* Remove any default margin above the title */
+  margin-bottom: 20px; /* Space below the title */
+  color: #333;
+}
+
+/* Empty message */
+p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+/* Grid layout for favourites — max 5 columns */
+.favourites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjusts based on screen size */
+  max-width: 1300px; /* 5 x 250px-ish including gap */
+  margin: 0 auto; /* This ensures the grid is centered */
+  gap: 2rem; /* Space between books */
+  justify-content: center; /* Center the items horizontally */
+  padding: 0 15px; /* Small padding for smaller screens */
+  align-items: center; /* Center the items vertically */
+}
+
+/* Book card */
+.book {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 220px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Consistent image size */
+.book img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Text styles */
+.book h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.book p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+/* Button styling */
+.book button {
+  margin-top: auto;
+  padding: 0.5rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.book button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .favourites-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .book {
+    max-width: 180px;
+  }
+
+  .book img {
+    width: 120px;
+    height: 180px;
+  }
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 480px) {
+  .favourites-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .book {
+    max-width: 150px;
+  }
+
+  .book img {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1200px) {
+  .favourites-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .book {
+    max-width: 250px;
+  }
+
+  .book img {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+/* Book description truncation */
+/* Truncated description with ellipsis */
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4rem;
+  max-height: 4.2rem; /* 3 lines * line height */
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center;
+}

@@ -1,0 +1,178 @@
+.book-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 2rem;
+	justify-content: center;
+	max-width: 1200px;
+	margin-left: 100px;
+	
+	padding: 2rem 1rem;
+	box-sizing: border-box;
+  }
+  
+  
+  /* Book covers */
+  .book-thumbnail {
+	width: 100%;
+	max-width: 180px; /* increased size */
+	border-radius: 16px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+  }
+  
+  .book-thumbnail:hover {
+	transform: scale(1.08);
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Modal Enhancements */
+  .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2000;
+  }
+  
+  .modal-content {
+	background: #fff;
+	border-radius: 16px;
+	max-width: 600px;
+	padding: 2rem;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+	overflow-y: auto;
+	max-height: 80vh;
+  }
+  
+  .modal-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+	margin-bottom: 1rem;
+  }
+  
+  /* Headings */
+  h1, h2 {
+	color: var(--primary-dark, #00897b);
+	text-align: center;
+	margin-bottom: 1rem;
+  }
+  
+  .container{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+  }
+  
+  .book-grid img {
+	width: 180px;
+	height: 260px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	transition: transform 0.2s ease;
+  }
+  
+  .book-grid img:hover {
+	transform: scale(1.03);
+  }
+  
+  .main-content {
+	padding-top: 80px; /* Adjust to match your navbar height */
+  }
+  
+  .favourite-btn {
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	background: var(--accent);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+  }
+  
+  .favourite-btn:hover {
+	background: var(--primary);
+  }
+  
+ /* Common Styles for the Explore Text (Both Featured and Recent) */
+.explore-text {
+	text-align: center;
+	font-size: 1rem;  /* Smaller font size than Recent and Featured */
+	color: #555;
+	font-weight: 300;  /* Lighter weight */
+	text-transform: uppercase;
+	margin-right: 860px;
+  }
+  
+  /* Specific styles for the "Explore the latest books" text */
+  .featured-text {
+	color: #2d3748; /* Dark color for Featured Books */
+	font-size: 1rem; /* Slightly larger than recent-text */
+	font-weight: 200;
+	margin-top: -10px; /* Light weight, but still uppercase */
+	
+  }
+  
+  /* Specific styles for the "Explore the newest books" text */
+  .recent-text {
+	color: #00897b; /* Accent color for Recent Books */
+	font-size: 1.1rem; /* Slightly larger than featured-text */
+	font-weight: 300; /* Light weight, but still uppercase */
+  }
+  
+  /* Adjust section titles */
+  .section-title {
+	text-align: center;
+	color: #2d3748;
+	font-size: 2rem;
+	margin-right: 890px;
+	margin-top: -60px;
+	
+  }
+
+  .section-title-2{
+	text-align: center;
+	color: #2d3748;
+	font-size: 2rem;
+	margin-right: 850px;
+	
+  }
+  
+  
+  /* Add some padding between images */
+  .book-thumbnail {
+	padding: 10px;
+  }
+  
+  /* 🔸 For "Explore the latest books" under Featured Books */
+.explore-latest {
+	text-align: center;
+	font-size: 0.75rem;
+	color: #444;
+	
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-right: 900px;
+  }
+  
+  /* 🔹 For "Explore the newest books" under Recent Books */
+  .explore-newest {
+	text-align: center;
+	font-size: 0.75rem;
+	color: #090909;
+	
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-right: 905px;
+  }
+  

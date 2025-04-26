@@ -1,29 +1,62 @@
-import { useState,useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import SearchBar from './components/SearchBar';
+import { useContext} from 'react';
+import { SearchContext } from './context/searchContext';
+// import axios from 'axios';
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { CollectionContext } from './context/collectionContext';
+import Navbar from './components/NavBar';
+import useFetch from './hooks/useFetch';
+import Footer from './components/Footer';
+
+
 
 function App() {
-  const [count, setCount] = useState(10000)
 
-  return (
-    <>
-      <div>
-        <h1>Our Project</h1>
-        {useEffect(()=>{
-          const timerId = setTimeout(()=>{
-            setCount((prevCount)=>prevCount-1)
-          },1000)
+	const location = useLocation();
+	const navigate = useNavigate();
 
-          return () => clearTimeout(timerId)
-        }
+	// useEffect(() => {
+	// 	console.log('ok');
+	// 	if (location.pathname === '/') {
+	// 		navigate('/search');
+	// 	}
+	// }, [location, navigate]);
 
-        ,[count])}
-        <h2>{count}</h2>
-      </div>
-      
-    </>
-  )
+	const { searchTerm, setSearchTerm, searchUrl, setSearchBooks } = useContext(SearchContext);
+	const { data,loading, error ,fetchData: fetchBooks} = useFetch(searchUrl)
+	setSearchBooks(data?.items || null);
+
+	if (error) return <p>Fetch Error!</p>
+
+	function handleSubmit(e) {
+		e.preventDefault();
+		searchUrl.current = `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}+intitle:${searchTerm}&maxResults=40&key=AIzaSyBLGLvEaYHQiD2M_GxpYbcHCGtw_6sfVi4`
+		console.log({searchUrl ,searchTerm})
+		fetchBooks()
+		if (location.pathname !== '/search') {
+			navigate('/search');
+		}
+	}
+
+	function handleChange(e) {
+		setSearchTerm(e.target.value)
+	}	
+
+	return (
+		<>
+  <Navbar handleSubmit={handleSubmit}  handleChange={handleChange} />	
+
+  <main className="main-content">
+  <Outlet context={loading}/>
+  </main>
+
+  <Footer />
+
+</>
+
+	);
 }
 
-export default App
+export default App;
