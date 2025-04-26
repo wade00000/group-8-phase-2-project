@@ -27,9 +27,9 @@ export default function AddToFavouritesButton({ book, className = '', closeModal
 
     try {
       if (newState) {
-        await postData('http://localhost:3000/favourites', book);
+        await postData('https://my-app-backend-lvfl.onrender.com/favourites', book);
       } else {
-        await deleteData(`http://localhost:3000/favourites/${book.id}`);
+        await deleteData(`https://my-app-backend-lvfl.onrender.com/favourites/${book.id}`);
       }
     } catch {
       setIsClick(!newState);
