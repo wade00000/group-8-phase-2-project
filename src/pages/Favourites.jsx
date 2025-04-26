@@ -8,8 +8,8 @@ import AddToFavouritesButton from '../components/AddToFavouritesButton';
 import '../Styles/Modal.css';
 
 export default function Favourites() {
-	const { favourites, setFavourites } = useContext(SearchContext);
-	const { data: favouriteBooks = [], loading, error, fetchData, update } = useFetch('https://my-app-backend-lvfl.onrender.com');//uses a render.com server
+	const { favourites = [], setFavourites } = useContext(SearchContext);
+	const { data: favouriteBooks = [], loading, error, fetchData, update } = useFetch('https://my-app-backend-lvfl.onrender.com/favourites');//uses a render.com server
 
 	// State for the modal
 	const [selectedBook, setSelectedBook] = useState(null);
@@ -41,7 +41,9 @@ export default function Favourites() {
 				<p>No favourites yet!</p>
 			) : (
 				<div className="row">
-					{favourites.map((book) => (
+               {console.log(favourites)}
+					{
+					favourites.map((book) => (
 						<div
 							key={book.id}
 							className="col-md-2 col-sm-3 mb-4"
