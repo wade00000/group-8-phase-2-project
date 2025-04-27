@@ -49,7 +49,7 @@ export default function Home() {
                   alt={book.volumeInfo.title}
                   className="img-fluid book-thumbnail"
                   onClick={() => handleBookClick(book)}
-                  style={{ cursor: 'pointer', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
+                  style={{ cursor: 'pointer', borderRadius: '12px', boxShadow: '0 4px 8px rgb(0px, 0px, 0px, 1px)' }}
                 />
               </div>
             );
@@ -83,7 +83,7 @@ export default function Home() {
                 alt={book.volumeInfo.title}
                 className="img-fluid book-thumbnail"
                 onClick={() => handleBookClick(book)}
-                style={{ cursor: 'pointer', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
+                style={{ cursor: 'pointer', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0px, 0px, 0px, 1px)' }}
               />
             </div>
           );

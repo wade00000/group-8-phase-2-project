@@ -34,9 +34,9 @@ export default function Search() {
 
       {/* Display books */}
       {searchBooks.length ? (
-        <div className="row justify-content-center">
+        <div className="book-grid">
           {searchBooks.map((book) => (
-            <div key={book.id} className="col-md-2 col-sm-3 mb-4">
+            <div key={book.id} className="book-item">
               <Book
                 book={book}
                 searchOnly={true}
@@ -49,42 +49,43 @@ export default function Search() {
         <p>No books found.</p>
       )}
 
-      {/* Modal / Overlay for displaying the selected book */}
-     {selectedBook && (
-       <div className="overlay" onClick={handleCloseModal}>
-         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-           <button className="close-btn" onClick={handleCloseModal}>×</button>
-           <div className="modal-header">
-             <img
-               src={selectedBook.volumeInfo.imageLinks?.thumbnail}
-               alt={selectedBook.volumeInfo.title}
-               className="modal-image"
-             />
-             <div className="modal-text">
-               <h2>{selectedBook.volumeInfo.title}</h2>
-               <p className="modal-author">
-                 {selectedBook.volumeInfo.authors?.join(', ') || 'Unknown Author'}
-               </p>
-               <p className="modal-meta">
-                 {selectedBook.volumeInfo.publishedDate} · {selectedBook.volumeInfo.pageCount || 'N/A'} pages
-               </p>
-               <a
-                 href={selectedBook.volumeInfo.previewLink}
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="preview-btn"
-               >
-                 Read Preview
-               </a>
-               <AddToFavouritesButton book={selectedBook} />
-              
-             </div>
-           </div>
-           <div className="modal-description">
-             <p>{selectedBook.volumeInfo.description || "No description available."}</p>
-           </div>
-         </div>
-       </div>
+       {/* 📘 Modal */}
+            {selectedBook && (
+              <div className="overlay" onClick={handleCloseModal}>
+                <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                  <button className="close-btn" onClick={handleCloseModal}>×</button>
+                  <div className="modal-header">
+                    <img
+                      src={selectedBook.volumeInfo.imageLinks?.thumbnail}
+                      alt={selectedBook.volumeInfo.title}
+                      className="modal-image"
+                    />
+                    <div className="modal-text">
+                      <h2>{selectedBook.volumeInfo.title}</h2>
+                      <p className="modal-author">
+                        {selectedBook.volumeInfo.authors?.join(', ') || 'Unknown Author'}
+                      </p>
+                      <p className="modal-meta">
+                        {selectedBook.volumeInfo.publishedDate} · {selectedBook.volumeInfo.pageCount || 'N/A'} pages
+                      </p>
+                      <div className="modal-buttons">
+                          <a
+                            href={selectedBook.volumeInfo.previewLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="modal-btn"
+                          >
+                            Read Preview
+                          </a>
+                          <AddToFavouritesButton book={selectedBook} className="modal-favourite-btn" />
+                          </div>
+                    </div>
+                  </div>
+                  <div className="modal-description">
+                    <p>{selectedBook.volumeInfo.description || "No description available."}</p>
+                  </div>
+                </div>
+              </div>
 )}
 
     </div>

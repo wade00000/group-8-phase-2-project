@@ -84,8 +84,9 @@
     right: 14px;
     background: none;
     border: none;
+    border-radius: 60px;
     font-size: 1.5rem;
-    color: #999;
+    color: #f90808;
     cursor: pointer;
   }
   
@@ -118,8 +119,9 @@
   }
   
   .modal-btn {
-    padding: 0.6rem 1rem; 
-    background-color: #2d9cdb;
+    padding: 0.7rem 1rem; 
+    margin-right: 10px ;
+    background-color: #00897b;
     color: white;
     border: none;
     border-radius: 8px;
@@ -162,10 +164,11 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  background-color: #00897b;
 }
 
 .modal-favourite-btn:hover {
-  background-color: #45a049;
+  background-color: #238acb;
 }
 
 .modal-favourite-btn:active {
@@ -187,3 +190,4 @@ button.favourite-btn.modal-favourite-btn{
   margin: 0%;
   
 }
+
