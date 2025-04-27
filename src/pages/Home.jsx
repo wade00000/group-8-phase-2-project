@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react';
-import BannerCarousel from '../components/BannerCarousel';
-import AddToFavouritesButton from '../components/AddToFavouritesButton';
 import axios from 'axios';
-import BannerImage from '../assets/Banner5.jpg';
-import Banner2 from '../assets/Banner6.jpg'; // Import Banner2 image
 import '../Styles/SearchPage.css';
 import '../Styles/Modal.css';
+import BannerCarousel from '../components/BannerCarousel';
+import AddToFavouritesButton from '../components/AddToFavouritesButton';
 import '../Styles/BannerCarousel.css';
-
-
-
+import BannerImage from '../assets/Banner5.jpg';
+import Banner2 from '../assets/Banner6.jpg';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
