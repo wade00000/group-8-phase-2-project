@@ -1,158 +1,9 @@
 {
   "favourites": [
     {
-      "id": "PTptDwAAQBAJ",
-      "kind": "books#volume",
-      "etag": "6aL13cBxqdU",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/PTptDwAAQBAJ",
-      "volumeInfo": {
-        "title": "Historical Dictionary of African American Theater",
-        "authors": [
-          "Anthony D. Hill"
-        ],
-        "publisher": "Rowman & Littlefield",
-        "publishedDate": "2018-11-09",
-        "description": "This second edition of Historical Dictionary of African American Theater reflects the rich history and representation of the black aesthetic and the significance of African American theater’s history, fleeting present, and promise to the future. It celebrates nearly 200 years of black theater in the United States and the thousands of black theater artists across the country—identifying representative black theaters, playwrights, plays, actors, directors, and designers and chronicling their contributions to the field from the birth of black theater in 1816 to the present. This second edition of Historical Dictionary of African American Theater, Second Edition contains a chronology, an introduction, appendixes, and an extensive bibliography. The dictionary section has over 700 cross-referenced entries on actors, playwrights, plays, musicals, theatres, -directors, and designers. This book is an excellent resource for students, researchers, and anyone wanting to know and more about African American Theater.",
-        "industryIdentifiers": [
-          {
-            "type": "ISBN_13",
-            "identifier": "9781538117293"
-          },
-          {
-            "type": "ISBN_10",
-            "identifier": "1538117290"
-          }
-        ],
-        "readingModes": {
-          "text": true,
-          "image": true
-        },
-        "pageCount": 755,
-        "printType": "BOOK",
-        "categories": [
-          "Performing Arts"
-        ],
-        "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": false,
-        "contentVersion": "0.24.12.0.preview.3",
-        "panelizationSummary": {
-          "containsEpubBubbles": false,
-          "containsImageBubbles": false
-        },
-        "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=PTptDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=PTptDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-        },
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=PTptDwAAQBAJ&pg=PA679&dq=featured&hl=&cd=12&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=PTptDwAAQBAJ&dq=featured&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/Historical_Dictionary_of_African_America.html?hl=&id=PTptDwAAQBAJ"
-      },
-      "saleInfo": {
-        "country": "KE",
-        "saleability": "NOT_FOR_SALE",
-        "isEbook": false
-      },
-      "accessInfo": {
-        "country": "KE",
-        "viewability": "PARTIAL",
-        "embeddable": true,
-        "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED",
-        "epub": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Historical_Dictionary_of_African_America-sample-epub.acsm?id=PTptDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "pdf": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Historical_Dictionary_of_African_America-sample-pdf.acsm?id=PTptDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "webReaderLink": "http://play.google.com/books/reader?id=PTptDwAAQBAJ&hl=&source=gbs_api",
-        "accessViewStatus": "SAMPLE",
-        "quoteSharingAllowed": false
-      },
-      "searchInfo": {
-        "textSnippet": "... <b>Featured</b> Actress in a Play, King Hedley II Russell Simmons: Best Director of a Special Theatrical Event, Def Poetry Jam on Broadway 2001 2003 2004 2006 2007 2008 2009 2010 2012 2013 2014 2015 2016 2017 Phylicia Rashad: Best Actress in a&nbsp;..."
-      }
-    },
-    {
-      "id": "AGpWnv0L61wC",
-      "kind": "books#volume",
-      "etag": "RmOTj7/wsJ0",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/AGpWnv0L61wC",
-      "volumeInfo": {
-        "title": "Who's Who of Canadian Women, 1999-2000",
-        "authors": [
-          "Gillian Holmes"
-        ],
-        "publisher": "University of Toronto Press",
-        "publishedDate": "1999-06-01",
-        "description": "Who's Who of Canadian Women is a guide to the most powerfuland innovative women in Canada. Celebrating the talents and achievement of over 3,700 women, Who's Who of Canadian Women includes women from all over Canada, in all fields, including agriculture, academia, law, business, politics, journalism, religion, sports and entertainment. Each biography includes such information as personal data, education, career history, current employment, affiliations, interests and honours. A special comment section reveals personal thoughts, goals, and achievements of the profiled individual. Entries are indexed by employment of affilitation for easy reference. Published every two years, Who's Who of Canadian Women selects its biographees on merit alone. This collection is an essential resource for all those interested in the achievements of Canadian women.",
-        "industryIdentifiers": [
-          {
-            "type": "ISBN_10",
-            "identifier": "0920966551"
-          },
-          {
-            "type": "ISBN_13",
-            "identifier": "9780920966556"
-          }
-        ],
-        "readingModes": {
-          "text": false,
-          "image": true
-        },
-        "pageCount": 1194,
-        "printType": "BOOK",
-        "categories": [
-          "Social Science"
-        ],
-        "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": false,
-        "contentVersion": "0.10.11.0.preview.1",
-        "panelizationSummary": {
-          "containsEpubBubbles": false,
-          "containsImageBubbles": false
-        },
-        "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=AGpWnv0L61wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=AGpWnv0L61wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-        },
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=AGpWnv0L61wC&pg=RA3-PA1987&dq=featured&hl=&cd=5&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=AGpWnv0L61wC&dq=featured&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/Who_s_Who_of_Canadian_Women_1999_2000.html?hl=&id=AGpWnv0L61wC"
-      },
-      "saleInfo": {
-        "country": "KE",
-        "saleability": "NOT_FOR_SALE",
-        "isEbook": false
-      },
-      "accessInfo": {
-        "country": "KE",
-        "viewability": "PARTIAL",
-        "embeddable": true,
-        "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED",
-        "epub": {
-          "isAvailable": false
-        },
-        "pdf": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Who_s_Who_of_Canadian_Women_1999_2000-sample-pdf.acsm?id=AGpWnv0L61wC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "webReaderLink": "http://play.google.com/books/reader?id=AGpWnv0L61wC&hl=&source=gbs_api",
-        "accessViewStatus": "SAMPLE",
-        "quoteSharingAllowed": false
-      },
-      "searchInfo": {
-        "textSnippet": "... <b>featured</b> , Anne of Green Gables , CBC ; <b>featured</b> , The Good Mother ( feature ) , Touch- stone Films ; <b>featured</b> , Sea of Love ( feature ) , Universal Pictures ; <b>featured</b> , Street Legal , CBC ; guest lead , E.N.G. , Alliance / CTV&nbsp;..."
-      }
-    },
-    {
       "id": "_luKEAAAQBAJ",
       "kind": "books#volume",
-      "etag": "7f0rQNxyt+A",
+      "etag": "FcKknpQNaB4",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/_luKEAAAQBAJ",
       "volumeInfo": {
         "title": "ISLAMIC PHILANTHROPY: Merits and Current Development",
@@ -193,7 +44,7 @@
           "thumbnail": "http://books.google.com/books/content?id=_luKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=_luKEAAAQBAJ&pg=PA126&dq=featured&hl=&cd=13&source=gbs_api",
+        "previewLink": "http://books.google.com/books?id=_luKEAAAQBAJ&pg=PA126&dq=featured&hl=&cd=9&source=gbs_api",
         "infoLink": "http://books.google.com/books?id=_luKEAAAQBAJ&dq=featured&hl=&source=gbs_api",
         "canonicalVolumeLink": "https://books.google.com/books/about/ISLAMIC_PHILANTHROPY_Merits_and_Current.html?hl=&id=_luKEAAAQBAJ"
       },
@@ -224,57 +75,53 @@
       }
     },
     {
-      "id": "27fDDwAAQBAJ",
+      "id": "y_byBgAAQBAJ",
       "kind": "books#volume",
-
-      "etag": "MDQb7sbSzPg",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/PTptDwAAQBAJ",
-
-      "etag": "jepZ2W0NaE8",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/27fDDwAAQBAJ",
-
+      "etag": "YC+FftEAkh8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/y_byBgAAQBAJ",
       "volumeInfo": {
-        "title": "Corporate and Financial Intergenerational Leadership",
+        "title": "The Rita Ora Quiz Book",
+        "subtitle": "100 Questions on the British Singer",
         "authors": [
-          "Julia Margarete Puaschunder"
+          "Chris Cowlin"
         ],
-        "publisher": "Cambridge Scholars Publishing",
-        "publishedDate": "2019-12-03",
-        "description": "Intergenerational predicaments of climate change, over-indebtedness and demographic aging of the Western world population put pressure on future generations. As such, this book explores how corporate and financial social responsibility can leverage intergenerational harmony. The concept of responsibility is shown to underlie the international emergence of Corporate Social Responsibility (CSR), while the book also describes the rise of Socially Responsible Investment (SRI) in the international arena and the intrinsic socio-psychological motives of socially responsible investors. As shown here, in this age of climate change, over-indebtedness and demographic aging, future corporate and financial intergenerational leadership may continue to embrace social responsibility in order to ensure a sustainable future for humankind.",
+        "publisher": "Andrews UK Limited",
+        "publishedDate": "2015-02-12",
+        "description": "Are you a fan of Rita Ora? Have you followed her rise to fame from the release of her debut album through to becoming a coach on the UK TV show The Voice? Whether you are already familiar with the charismatic singer from London, or would like to find out more, you won't want to be without The Rita Ora Quiz Book. What character did Rita play in the 2015 film Fifty Shades of Grey? Who directed the music video for Rita's single ‘How We Do (Party)’? How many BRIT awards was Rita nominated for in 2013? The answers to these questions and more can all be found in this exciting new quiz book. Containing both personal details and professional highlights, the 100 questions in this book will help you to get to know your favourite singer as well as providing a fascinating insight into the life of the chart-topping star. This is a must-have book for Rita Ora’s rapidly increasing fan base and for anyone with an interest in the current music scene.",
         "industryIdentifiers": [
           {
             "type": "ISBN_13",
-            "identifier": "9781527544192"
+            "identifier": "9780993179648"
           },
           {
             "type": "ISBN_10",
-            "identifier": "1527544192"
+            "identifier": "0993179649"
           }
         ],
         "readingModes": {
           "text": false,
           "image": true
         },
-        "pageCount": 340,
+        "pageCount": 29,
         "printType": "BOOK",
         "categories": [
-          "Business & Economics"
+          "Music"
         ],
         "maturityRating": "NOT_MATURE",
         "allowAnonLogging": false,
-        "contentVersion": "1.3.3.0.preview.1",
+        "contentVersion": "0.1.1.0.preview.1",
         "panelizationSummary": {
           "containsEpubBubbles": false,
           "containsImageBubbles": false
         },
         "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=27fDDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=27fDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          "smallThumbnail": "http://books.google.com/books/content?id=y_byBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=y_byBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=27fDDwAAQBAJ&pg=PA71&dq=featured&hl=&cd=3&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=27fDDwAAQBAJ&dq=featured&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/Corporate_and_Financial_Intergenerationa.html?hl=&id=27fDDwAAQBAJ"
+        "previewLink": "http://books.google.com/books?id=y_byBgAAQBAJ&pg=PT14&dq=featured&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=y_byBgAAQBAJ&dq=featured&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Rita_Ora_Quiz_Book.html?hl=&id=y_byBgAAQBAJ"
       },
       "saleInfo": {
         "country": "KE",
@@ -292,64 +139,66 @@
         },
         "pdf": {
           "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Corporate_and_Financial_Intergenerationa-sample-pdf.acsm?id=27fDDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          "acsTokenLink": "http://books.google.com/books/download/The_Rita_Ora_Quiz_Book-sample-pdf.acsm?id=y_byBgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=27fDDwAAQBAJ&hl=&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=y_byBgAAQBAJ&hl=&source=gbs_api",
         "accessViewStatus": "SAMPLE",
         "quoteSharingAllowed": false
       },
       "searchInfo": {
-        "textSnippet": "... <b>featured</b> university logos exhibited to 147 students , and the control dormitory , in which 250 summer school students lived , <b>featured</b> no logo exposure . Week four of the field observation <b>featured</b> changed conditions for all the test&nbsp;..."
+        "textSnippet": "... <b>featuring</b> Rita Ora , reach in 2013 ? True or false : Rita <b>featured</b> on a single with pop star Kylie Minogue during 2013 ? What American hip - hop singer <b>featured</b> on one of Rita&#39;s songs titled &#39; Love and War &#39; ? True or false : Rita <b>featured</b>&nbsp;..."
       }
     },
     {
-      "id": "J8kwOMqTGtgC",
+      "id": "iO5pApw2JycC",
       "kind": "books#volume",
-      "etag": "+X1BWGHMN78",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/J8kwOMqTGtgC",
+      "etag": "rM0SXiJEtZ4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/iO5pApw2JycC",
       "volumeInfo": {
-        "title": "Law School Essays that Made a Difference",
+        "title": "The Ivory Tower and Harry Potter",
+        "subtitle": "Perspectives on a Literary Phenomenon",
         "authors": [
-          "Eric Owens",
-          "Princeton Review (Firm)"
+          "Lana A. Whited"
         ],
-        "publisher": "The Princeton Review",
-        "publishedDate": "2003",
-        "description": "Personal Statements That Scored Face it, a lot of students have great LSAT scores. The best way for you to stand out in a crowd of applicants to top law schools is to write an exceptional personal statement. This book puts you in the admissions pro's seat; we give you the intimate details-test scores, GPAs, demographic information, and of course, personal statements-of 34 law school hopefuls. Then we show you where they got in . . . and where they didn't-invaluable information when you're evaluating your own chances of admission to the most selective law schools in the land. 1. 34 real-life personal statements by students at Yale, Harvard, Columbia, NYU, Stanford, and more 2. Where they got in; where they didn't 2. Bonus section: Patented strategies for acing the Games section of the LSAT 4. Interviews with admissions officers at Boalt Hall, Duke, George Washington, Georgetown, and Northwestern Inside you'll find essays written for applications to the following law schools: Columbia Law School Cornell Law School Duke Law School Fordham Law School The George Washington University Law School Georgetown University Law Center Harvard Law School New York University School of Law Northwestern University School of Law Stanford Law School University of Arizona, James E. Rogers College of Law University of California-Davis, School of Law University of Chicago Law School University of Colorado-Boulder, School of Law University of Michigan Law School University of Pennsylvania Law School University of Texas School of Law University of Virginia School of Law Vanderbilt University LawSchool Yale Law School",
+        "publisher": "University of Missouri Press",
+        "publishedDate": "2004",
+        "description": "Now available in paper, The Ivory Tower and Harry Potter is the first book-length analysis of J. K. Rowling's work from a broad range of perspectives within literature, folklore, psychology, sociology, and popular culture. A significant portion of the book explores the Harry Potter series' literary ancestors, including magic and fantasy works by Ursula K. LeGuin, Monica Furlong, Jill Murphy, and others, as well as previous works about the British boarding school experience. Other chapters explore the moral and ethical dimensions of Harry's world, including objections to the series raised within some religious circles. In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling's latest book, Harry Potter and the Order of the Phoenix.",
         "industryIdentifiers": [
           {
             "type": "ISBN_10",
-            "identifier": "0375763457"
+            "identifier": "0826215491"
           },
           {
             "type": "ISBN_13",
-            "identifier": "9780375763458"
+            "identifier": "9780826215499"
           }
         ],
         "readingModes": {
           "text": true,
           "image": true
         },
-        "pageCount": 262,
+        "pageCount": 436,
         "printType": "BOOK",
         "categories": [
-          "Education"
+          "Juvenile Fiction"
         ],
+        "averageRating": 4.5,
+        "ratingsCount": 12,
         "maturityRating": "NOT_MATURE",
         "allowAnonLogging": false,
-        "contentVersion": "0.10.16.0.preview.3",
+        "contentVersion": "2.4.12.0.preview.3",
         "panelizationSummary": {
           "containsEpubBubbles": false,
           "containsImageBubbles": false
         },
         "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=J8kwOMqTGtgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=J8kwOMqTGtgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          "smallThumbnail": "http://books.google.com/books/content?id=iO5pApw2JycC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=iO5pApw2JycC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=J8kwOMqTGtgC&pg=PA190&dq=featured&hl=&cd=2&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=J8kwOMqTGtgC&dq=featured&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/Law_School_Essays_that_Made_a_Difference.html?hl=&id=J8kwOMqTGtgC"
+        "previewLink": "http://books.google.com/books?id=iO5pApw2JycC&printsec=frontcover&dq=potter+intitle:potter&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=iO5pApw2JycC&dq=potter+intitle:potter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Ivory_Tower_and_Harry_Potter.html?hl=&id=iO5pApw2JycC"
       },
       "saleInfo": {
         "country": "KE",
@@ -364,172 +213,20 @@
         "textToSpeechPermission": "ALLOWED",
         "epub": {
           "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Law_School_Essays_that_Made_a_Difference-sample-epub.acsm?id=J8kwOMqTGtgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          "acsTokenLink": "http://books.google.com/books/download/The_Ivory_Tower_and_Harry_Potter-sample-epub.acsm?id=iO5pApw2JycC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
         },
         "pdf": {
           "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Law_School_Essays_that_Made_a_Difference-sample-pdf.acsm?id=J8kwOMqTGtgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          "acsTokenLink": "http://books.google.com/books/download/The_Ivory_Tower_and_Harry_Potter-sample-pdf.acsm?id=iO5pApw2JycC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=J8kwOMqTGtgC&hl=&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=iO5pApw2JycC&hl=&source=gbs_api",
         "accessViewStatus": "SAMPLE",
         "quoteSharingAllowed": false
       },
       "searchInfo": {
-        "textSnippet": "... <b>featured</b> , and each artist&#39;s work will be <b>featured</b> for exactly one week . The order in which the artists &#39; works are <b>featured</b> is subject to the following constraints : K&#39;s work will not be <b>featured</b> in the sixth week . M&#39;s work and&nbsp;..."
-      }
-    },
-    {
-      "id": "PTptDwAAQBAJ",
-      "kind": "books#volume",
-      "etag": "MDQb7sbSzPg",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/PTptDwAAQBAJ",
-      "volumeInfo": {
-        "title": "Historical Dictionary of African American Theater",
-        "authors": [
-          "Anthony D. Hill"
-        ],
-        "publisher": "Rowman & Littlefield",
-        "publishedDate": "2018-11-09",
-        "description": "This second edition of Historical Dictionary of African American Theater reflects the rich history and representation of the black aesthetic and the significance of African American theater’s history, fleeting present, and promise to the future. It celebrates nearly 200 years of black theater in the United States and the thousands of black theater artists across the country—identifying representative black theaters, playwrights, plays, actors, directors, and designers and chronicling their contributions to the field from the birth of black theater in 1816 to the present. This second edition of Historical Dictionary of African American Theater, Second Edition contains a chronology, an introduction, appendixes, and an extensive bibliography. The dictionary section has over 700 cross-referenced entries on actors, playwrights, plays, musicals, theatres, -directors, and designers. This book is an excellent resource for students, researchers, and anyone wanting to know and more about African American Theater.",
-        "industryIdentifiers": [
-          {
-            "type": "ISBN_13",
-            "identifier": "9781538117293"
-          },
-          {
-            "type": "ISBN_10",
-            "identifier": "1538117290"
-          }
-        ],
-        "readingModes": {
-          "text": true,
-          "image": true
-        },
-        "pageCount": 755,
-        "printType": "BOOK",
-        "categories": [
-          "Performing Arts"
-        ],
-        "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": false,
-        "contentVersion": "0.24.12.0.preview.3",
-        "panelizationSummary": {
-          "containsEpubBubbles": false,
-          "containsImageBubbles": false
-        },
-        "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=PTptDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=PTptDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-        },
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=PTptDwAAQBAJ&pg=PA679&dq=featured&hl=&cd=12&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=PTptDwAAQBAJ&dq=featured&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/Historical_Dictionary_of_African_America.html?hl=&id=PTptDwAAQBAJ"
-      },
-      "saleInfo": {
-        "country": "KE",
-        "saleability": "NOT_FOR_SALE",
-        "isEbook": false
-      },
-      "accessInfo": {
-        "country": "KE",
-        "viewability": "PARTIAL",
-        "embeddable": true,
-        "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED",
-        "epub": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Historical_Dictionary_of_African_America-sample-epub.acsm?id=PTptDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "pdf": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Historical_Dictionary_of_African_America-sample-pdf.acsm?id=PTptDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "webReaderLink": "http://play.google.com/books/reader?id=PTptDwAAQBAJ&hl=&source=gbs_api",
-        "accessViewStatus": "SAMPLE",
-        "quoteSharingAllowed": false
-      },
-      "searchInfo": {
-        "textSnippet": "... <b>Featured</b> Actress in a Play, King Hedley II Russell Simmons: Best Director of a Special Theatrical Event, Def Poetry Jam on Broadway 2001 2003 2004 2006 2007 2008 2009 2010 2012 2013 2014 2015 2016 2017 Phylicia Rashad: Best Actress in a&nbsp;..."
-      }
-    },
-    {
-      "id": "_luKEAAAQBAJ",
-      "kind": "books#volume",
-      "etag": "6Ow7FhhXiTM",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/_luKEAAAQBAJ",
-      "volumeInfo": {
-        "title": "ISLAMIC PHILANTHROPY: Merits and Current Development",
-        "authors": [
-          "Setiawan bin Lahuri, et al."
-        ],
-        "publisher": "UNIDA GONTOR PRESS",
-        "publishedDate": "2022-09-20",
-        "description": "This book chapter contains several relevant points of researches on islamic Philanthropy as traditional financial system in islam. The book starts with the emphasis on the nature of Islamic Philanthropy as an instrument in realizing socio-economic justice through equitable distribution of wealth and reducing poverty. in order to maintain sustainable achievement of the goal, it is important to use fund of the Islamic Philanthropy in productive ways. hence, the discussion then continues with the use of the funds for empowerment programs by displaying the cases for community empowerment in indonesia and youth empowerment in North-Eastern Nigeria.",
-        "industryIdentifiers": [
-          {
-            "type": "ISBN_13",
-            "identifier": "9786235432083"
-          },
-          {
-            "type": "ISBN_10",
-            "identifier": "6235432089"
-          }
-        ],
-        "readingModes": {
-          "text": false,
-          "image": true
-        },
-        "pageCount": 223,
-        "printType": "BOOK",
-        "categories": [
-          "Biography & Autobiography"
-        ],
-        "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": false,
-        "contentVersion": "0.1.2.0.preview.1",
-        "panelizationSummary": {
-          "containsEpubBubbles": false,
-          "containsImageBubbles": false
-        },
-        "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=_luKEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=_luKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-        },
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=_luKEAAAQBAJ&pg=PA126&dq=featured&hl=&cd=13&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=_luKEAAAQBAJ&dq=featured&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/ISLAMIC_PHILANTHROPY_Merits_and_Current.html?hl=&id=_luKEAAAQBAJ"
-      },
-      "saleInfo": {
-        "country": "KE",
-        "saleability": "NOT_FOR_SALE",
-        "isEbook": false
-      },
-      "accessInfo": {
-        "country": "KE",
-        "viewability": "PARTIAL",
-        "embeddable": true,
-        "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED",
-        "epub": {
-          "isAvailable": false
-        },
-        "pdf": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/ISLAMIC_PHILANTHROPY_Merits_and_Current-sample-pdf.acsm?id=_luKEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "webReaderLink": "http://play.google.com/books/reader?id=_luKEAAAQBAJ&hl=&source=gbs_api",
-        "accessViewStatus": "SAMPLE",
-        "quoteSharingAllowed": false
-      },
-      "searchInfo": {
-        "textSnippet": "... <b>Featured</b> Fund : ( i ) The waqf institution must be authorised by the Federal or State Islamic religious council to ... <b>Featured</b> Fund Shariah Adviser . Additionally , the fund manager may designate more than one ( 1 ) waqf&nbsp;..."
+        "textSnippet": "In her new epilogue, Lana A. Whited brings this volume up to date by covering Rowling&#39;s latest book, Harry Potter and the Order of the Phoenix."
       }
     }
   ],
-
-  "favourites": [],
-
   "collections": []
 }

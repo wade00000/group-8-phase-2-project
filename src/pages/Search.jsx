@@ -77,7 +77,7 @@ export default function Search() {
                  Read Preview
                </a>
                <AddToFavouritesButton book={selectedBook} />
-               <AddToCollectionButton book={selectedBook}/>
+              
              </div>
            </div>
            <div className="modal-description">

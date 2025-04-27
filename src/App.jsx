@@ -12,7 +12,7 @@ import "./index.css";
 function App() {
 
 	const location = useLocation();
-	const navigate = useNavigate;
+	const navigate = useNavigate();
 
 	const { searchTerm, setSearchTerm, searchUrl, setSearchBooks } = useContext(SearchContext);
 	const { data,loading, error ,fetchData: fetchBooks} = useFetch(searchUrl)
