@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { CollectionContext } from '../context/collectionContext';
 import usePostDelete from '../hooks/usePostDelete';
+import '../Styles/SearchPage.css';
 
 export default function AddToCollectionButton({ book }) {
   const { collectionBooks, setCollectionBooks } = useContext(CollectionContext);
@@ -46,7 +47,7 @@ export default function AddToCollectionButton({ book }) {
   };
 
   return (
-    <button onClick={handleAddToCollection} className="btn btn-primary">
+    <button onClick={handleAddToCollection} className="modal-favourite-btn" id = "modal-favourite-btn">
       {isInCollection ? 'Remove from Collection' : 'Add to Collection'}
     </button>
   );
