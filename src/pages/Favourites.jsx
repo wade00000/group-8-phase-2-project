@@ -30,7 +30,7 @@ export default function Favourites() {
 
   return (
     <div className="container">
-      <h2 className="text-center mb-4">Your Favourites</h2>
+      <h2 className="text-center mt-2 mb-2" id = "favs-header">Your Favourites</h2>
       
       {favourites?.length === 0 ? (
         <p>No favourites yet!</p>
@@ -41,11 +41,13 @@ export default function Favourites() {
               key={book.id}
               className="col-md-2 col-sm-3 mb-4"
               onClick={() => setSelectedBook(book)} // Clicking a book image opens the modal
+              id = "book-card"
             >
               <img
                 src={book.volumeInfo.imageLinks?.thumbnail} // Only showing the book image
                 alt={book.volumeInfo.title}
                 className="book-image"
+                id = "book-image"
               />
             </div>
           ))}
@@ -73,16 +75,17 @@ export default function Favourites() {
                 <p className="modal-meta">
                   {selectedBook.volumeInfo.publishedDate} · {selectedBook.volumeInfo.pageCount || 'N/A'} pages
                 </p>
-                <div className="modal-buttons">
+                <div className="modal-buttons" id = "modal-buttons">
                   <a
                     href={selectedBook.volumeInfo.previewLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="modal-btn"
+                    id = "modal-btn"
                   >
                     Read Preview
                   </a>
-                  <AddToFavouritesButton book={selectedBook} className="modal-favourite-btn" />
+                  <AddToFavouritesButton book={selectedBook} className="modal-favourite-btn" id = "modal-favourite-btn"/>
                 </div>
               </div>
             </div>

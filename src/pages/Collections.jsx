@@ -3,6 +3,8 @@ import Book from '../components/Book';
 import Loader from '../components/Loader';
 import { useContext, useEffect } from 'react';
 import { CollectionContext } from '../context/collectionContext';
+import '../Styles/Book.css';
+
 
 export default function Collections() {
   const { data, loading, error } = useFetch('http://localhost:3000/collections');
@@ -19,7 +21,7 @@ export default function Collections() {
   if (error) return <p>Error loading collections: {error.message}</p>;
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" id = "book-card">
       <h2 className="text-center mb-4">Your Collection</h2>
       {collectionBooks.length === 0 ? (
         <p>No books in your collection yet!</p>

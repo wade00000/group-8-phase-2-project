@@ -2,27 +2,17 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import SearchBar from './components/SearchBar';
 import { useContext} from 'react';
 import { SearchContext } from './context/searchContext';
-// import axios from 'axios';
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CollectionContext } from './context/collectionContext';
 import Navbar from './components/NavBar';
 import useFetch from './hooks/useFetch';
 import Footer from './components/Footer';
-
+import "./index.css";
 
 
 function App() {
 
 	const location = useLocation();
-	const navigate = useNavigate();
-
-	// useEffect(() => {
-	// 	console.log('ok');
-	// 	if (location.pathname === '/') {
-	// 		navigate('/search');
-	// 	}
-	// }, [location, navigate]);
+	const navigate = useNavigate;
 
 	const { searchTerm, setSearchTerm, searchUrl, setSearchBooks } = useContext(SearchContext);
 	const { data,loading, error ,fetchData: fetchBooks} = useFetch(searchUrl)
@@ -48,7 +38,7 @@ function App() {
 		<>
   <Navbar handleSubmit={handleSubmit}  handleChange={handleChange} />	
 
-  <main className="main-content">
+  <main className="main-content" id = "main">
   <Outlet context={loading}/>
   </main>
 

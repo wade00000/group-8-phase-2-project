@@ -67,6 +67,7 @@ export default function Book({ book, searchOnly, setSelectedBook, forceUpdate })
         src={imageLinks?.thumbnail || placeholder}
         alt={title}
         className="book-image"
+        id = "book-image"
       />
 
       {/* Only show book details if not in search view */}
