@@ -1,66 +1,40 @@
-.book {
-	background-color: #100f0f;
-	border: 1px solid #ebe6e6;
-	border-radius: 10px;
-	padding: 1rem;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-	transition: transform 0.2s;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.book:hover {
-	transform: translateY(-5px);
-}
-
-.book img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 5px;
-	margin-bottom: 1rem;
-	object-fit: cover;
-}
-
-.book h2 {
-	font-size: 1.2rem;
-	margin: 0.5rem 0;
-}
-
-.book p {
-	font-size: 0.9rem;
-	color: #555;
-}
-
 .book button {
-	margin-top: auto;
-	padding: 0.5rem 1rem;
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background 0.2s;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 1rem; /* Add space between button and the bottom of the card */
+  padding: 0.5rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.book button:hover {
+  background-color: #0056b3;
+}
+
+/* Book card */
+#book {
+  margin-bottom: 25px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 220px; /* Fixed width */
+  height: 350px; /* Fixed height */
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto; /* Center the cards horizontally */
 }
 
 .book button:hover {
 	background-color: #0056b3;
 }
-
-.book img {
-	width: 150px;
-	height: 220px;
-	object-fit: cover;
-	border-radius: 5px;
-	margin-bottom: 1rem;
-	align-self: center;
-}
-.book h2 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    text-align: center;
-}
-
 
 /* Book container for search page */
 .search-grid {
@@ -74,7 +48,7 @@
   
   /* Book card styling for search-only view */
   .book.search-only {
-    width: 160px;
+  width: 160px;
   height: 250px;
   padding: 0;                /* Remove any padding */
   border: none;              /* Optional: remove border if not needed */
@@ -82,6 +56,20 @@
   border-radius: 10px;
   overflow: hidden;
   }
+  #book{
+    background-color: transparent;
+  }
+  #book-card{
+    max-width: 200px; /* or whatever size you want */
+    max-height: 300px;
+    height:100%;
+  }
+  #book-image{
+    width:100%;
+    height:100%;
+    padding: 30px;
+  }
+
   
   /* Styling the image to be uniform in size */
   .book.search-only .book-image {
@@ -96,8 +84,6 @@
   /* Optional: Limit description to 3 lines */
   .description {
     display: -webkit-box;
-    
-    /* Limit description to 3 lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;

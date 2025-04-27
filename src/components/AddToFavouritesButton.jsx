@@ -3,7 +3,11 @@ import { SearchContext } from '../context/searchContext';
 import usePostDelete from '../hooks/usePostDelete';
 import { useLocation } from 'react-router-dom';
 import '../Styles/SearchPage.css';
+
 export default function AddToFavouritesButton({ book, className = '' }) {
+
+export default function AddToFavouritesButton({ book, className = '', closeModal }) {
+
   const { favourites } = useContext(SearchContext);
   const { postData, deleteData } = usePostDelete();
   const location = useLocation();
@@ -19,6 +23,11 @@ export default function AddToFavouritesButton({ book, className = '' }) {
     e.stopPropagation();
     const newState = !isClick;
     setIsClick(newState);
+
+    // Close the modal if the current page is favourites
+    if (location.pathname === '/favourites') {
+      closeModal();
+    }
 
     try {
       if (newState) {

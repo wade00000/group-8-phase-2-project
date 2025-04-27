@@ -45,7 +45,7 @@
     flex: 1;
   }
   
-  .modal-author {
+  .modal-author { 
     font-weight: bold;
     margin: 5px 0;
     color: #555;
@@ -106,10 +106,15 @@
   }
   
   .modal-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 1.5rem;
+    flex: 1; /* 🔥 Make both buttons take equal space */
+    padding: 0.6rem 1rem; 
+    min-width: 140px; /* 🔥 Make sure the buttons don't become too small */
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .modal-btn {
@@ -130,6 +135,15 @@
     background-color: #238acb;
   }
   
+  #modal-buttons {
+    align-items: center;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+  }
+  
   /* Default button style */
 .favourite-btn {
   padding: 10px;
@@ -139,13 +153,15 @@
 }
 
 .modal-favourite-btn {
-  background-color: #4CAF50; /* Green color for modal */
-  color: white;
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  
-  
+  flex: 1; /* 🔥 Make both buttons take equal space */
+  padding: 0.6rem 1rem; 
+  min-width: 140px; /* 🔥 Make sure the buttons don't become too small */
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .modal-favourite-btn:hover {
@@ -155,5 +171,19 @@
 .modal-favourite-btn:active {
   background-color: #3e8e41;
 }
-
-
+#modal-favourite-btn{
+  padding: 0%;
+  margin: 10px;
+  height: fit-content;
+  width: fit-content;
+}
+#modal-buttons.modal-buttons{
+  height: fit-content;
+  width: fit-content; 
+}
+button.favourite-btn.modal-favourite-btn{
+  height: fit-content;
+  width: fit-content;
+  margin: 0%;
+  
+}
