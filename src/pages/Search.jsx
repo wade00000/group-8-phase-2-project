@@ -34,9 +34,9 @@ export default function Search() {
 
       {/* Display books */}
       {searchBooks.length ? (
-        <div className="row justify-content-center">
+        <div className="book-grid">
           {searchBooks.map((book) => (
-            <div key={book.id} className="col-md-2 col-sm-3 mb-4">
+            <div key={book.id} className="book-item">
               <Book
                 book={book}
                 searchOnly={true}
