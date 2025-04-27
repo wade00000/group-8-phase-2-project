@@ -16,7 +16,7 @@
     object-fit: stretch;
     filter: brightness(70%);
     transition: opacity 1s ease-in-out;
-    margin-top: -100px;
+    margin-top: 30px;
     margin-bottom: 20px;
   }
   
