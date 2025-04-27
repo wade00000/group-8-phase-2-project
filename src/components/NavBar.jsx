@@ -18,26 +18,26 @@ const Navbar = ({handleSubmit, handleChange}) => {
   const {searchTerm} = useContext(SearchContext)
   return (
     <nav className="navbar">
-    <div className="navbar-left">
-      {/* The Link component will make the title clickable and navigate to /home */}
+     <div className="navbar-left">
+      {/*title IS clickable and navigateS to /home */}
       <Link to="/" className="navbar-logo">
         <img src={logo} alt="Logo" className="logo" />
         <span className="site-title">Open Library</span>
       </Link>
-    </div>
+     </div>
 
-  <div className="navbar-center">
+      <div className="navbar-center">
     <SearchBar handleSubmit={handleSubmit} handleChange={handleChange} value={searchTerm} />
-  </div>
+      </div>
 
-  <div className="navbar-right">
+        <div className="navbar-right">
     <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
     <NavLink to="/favourites" className={({ isActive }) => isActive ? 'active' : ''}>Favourites</NavLink>
     <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink>
     <a href="/profile" className="profile-icon">
     <FaUserCircle size={24} />
   </a>
-  </div>
+       </div>
 </nav>
 
   );
