@@ -11,7 +11,7 @@
     font-size: 1rem;
     transition: box-shadow 0.2s ease;
     font-family: 'Poppins', sans-serif;
-    box-shadow: #329eddd0;
+    box-shadow: #00897b;
   }
   
   .search-input:focus {

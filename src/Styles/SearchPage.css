@@ -8,6 +8,8 @@
 	
 	padding: 2rem 1rem;
 	box-sizing: border-box;
+	
+
   }
   
   
@@ -19,6 +21,7 @@
 	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	cursor: pointer;
+	
   }
   
   .book-thumbnail:hover {
