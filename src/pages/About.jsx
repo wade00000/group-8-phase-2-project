@@ -3,6 +3,11 @@ import '../Styles/About.css';  // Import your updated CSS file
 import reactImage from '../assets/React.png';
 import nodeImage from '../assets/Node.png';
 import cssImage from '../assets/Css.png';
+import ian from '../assets/ian.jpeg'
+import wade from '../assets/wade.jpeg'
+import patrick from '../assets/patrick.jpeg'
+import esther from '../assets/esther.webp'
+import golda from '../assets/golda.jpg'
 
 const About = () => {
   return (
@@ -54,27 +59,27 @@ const About = () => {
         <h2 className="team-title">Meet Our Team</h2>
         <div className="team-members">
           <div className="team-member">
-            <img src="path/to/image1.jpg" alt="Team Member" />
+            <img src={esther} alt="Team Member" />
             <h3>Esther Mutua</h3>
             <p>Team Member</p>
           </div>
           <div className="team-member">
-            <img src="path/to/image2.jpg" alt="Team Member" />
+            <img src={ian} alt="Team Member" />
             <h3>Ian Wafula</h3>
             <p>Team Member</p>
           </div>
           <div className="team-member">
-            <img src="path/to/image3.jpg" alt="Team Member" />
+            <img src={wade} alt="Team Member" />
             <h3>Wade Namada</h3>
             <p>Team Member</p>
           </div>
           <div className="team-member">
-            <img src="path/to/image3.jpg" alt="Team Member" />
+            <img src={golda} alt="Team Member" />
             <h3>Golda Atemba</h3>
             <p>Team Member</p>
           </div>
           <div className="team-member">
-            <img src="path/to/image3.jpg" alt="Team Member" />
+            <img src={patrick} alt="Team Member" />
             <h3>Patrick Kamau</h3>
             <p>Team Member</p>
           </div>
