@@ -155,7 +155,7 @@
     {
       "id": "PTptDwAAQBAJ",
       "kind": "books#volume",
-      "etag": "6aL13cBxqdU",
+      "etag": "MDQb7sbSzPg",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/PTptDwAAQBAJ",
       "volumeInfo": {
         "title": "Historical Dictionary of African American Theater",
@@ -225,6 +225,155 @@
       },
       "searchInfo": {
         "textSnippet": "... <b>Featured</b> Actress in a Play, King Hedley II Russell Simmons: Best Director of a Special Theatrical Event, Def Poetry Jam on Broadway 2001 2003 2004 2006 2007 2008 2009 2010 2012 2013 2014 2015 2016 2017 Phylicia Rashad: Best Actress in a&nbsp;..."
+      }
+    },
+    {
+      "id": "PTptDwAAQBAJ",
+      "kind": "books#volume",
+      "etag": "MDQb7sbSzPg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/PTptDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Historical Dictionary of African American Theater",
+        "authors": [
+          "Anthony D. Hill"
+        ],
+        "publisher": "Rowman & Littlefield",
+        "publishedDate": "2018-11-09",
+        "description": "This second edition of Historical Dictionary of African American Theater reflects the rich history and representation of the black aesthetic and the significance of African American theater’s history, fleeting present, and promise to the future. It celebrates nearly 200 years of black theater in the United States and the thousands of black theater artists across the country—identifying representative black theaters, playwrights, plays, actors, directors, and designers and chronicling their contributions to the field from the birth of black theater in 1816 to the present. This second edition of Historical Dictionary of African American Theater, Second Edition contains a chronology, an introduction, appendixes, and an extensive bibliography. The dictionary section has over 700 cross-referenced entries on actors, playwrights, plays, musicals, theatres, -directors, and designers. This book is an excellent resource for students, researchers, and anyone wanting to know and more about African American Theater.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781538117293"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1538117290"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 755,
+        "printType": "BOOK",
+        "categories": [
+          "Performing Arts"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.24.12.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=PTptDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=PTptDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=PTptDwAAQBAJ&pg=PA679&dq=featured&hl=&cd=12&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=PTptDwAAQBAJ&dq=featured&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Historical_Dictionary_of_African_America.html?hl=&id=PTptDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Historical_Dictionary_of_African_America-sample-epub.acsm?id=PTptDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Historical_Dictionary_of_African_America-sample-pdf.acsm?id=PTptDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=PTptDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>Featured</b> Actress in a Play, King Hedley II Russell Simmons: Best Director of a Special Theatrical Event, Def Poetry Jam on Broadway 2001 2003 2004 2006 2007 2008 2009 2010 2012 2013 2014 2015 2016 2017 Phylicia Rashad: Best Actress in a&nbsp;..."
+      }
+    },
+    {
+      "id": "_luKEAAAQBAJ",
+      "kind": "books#volume",
+      "etag": "6Ow7FhhXiTM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_luKEAAAQBAJ",
+      "volumeInfo": {
+        "title": "ISLAMIC PHILANTHROPY: Merits and Current Development",
+        "authors": [
+          "Setiawan bin Lahuri, et al."
+        ],
+        "publisher": "UNIDA GONTOR PRESS",
+        "publishedDate": "2022-09-20",
+        "description": "This book chapter contains several relevant points of researches on islamic Philanthropy as traditional financial system in islam. The book starts with the emphasis on the nature of Islamic Philanthropy as an instrument in realizing socio-economic justice through equitable distribution of wealth and reducing poverty. in order to maintain sustainable achievement of the goal, it is important to use fund of the Islamic Philanthropy in productive ways. hence, the discussion then continues with the use of the funds for empowerment programs by displaying the cases for community empowerment in indonesia and youth empowerment in North-Eastern Nigeria.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786235432083"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6235432089"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 223,
+        "printType": "BOOK",
+        "categories": [
+          "Biography & Autobiography"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.2.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=_luKEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=_luKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=_luKEAAAQBAJ&pg=PA126&dq=featured&hl=&cd=13&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=_luKEAAAQBAJ&dq=featured&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/ISLAMIC_PHILANTHROPY_Merits_and_Current.html?hl=&id=_luKEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/ISLAMIC_PHILANTHROPY_Merits_and_Current-sample-pdf.acsm?id=_luKEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=_luKEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>Featured</b> Fund : ( i ) The waqf institution must be authorised by the Federal or State Islamic religious council to ... <b>Featured</b> Fund Shariah Adviser . Additionally , the fund manager may designate more than one ( 1 ) waqf&nbsp;..."
       }
     }
   ],
