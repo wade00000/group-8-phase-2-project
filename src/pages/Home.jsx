@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get('https://www.googleapis.com/books/v1/volumes?q=featured&maxResults=20')
+      .get('https://www.googleapis.com/books/v1/volumes?q=bestsellers&maxResults=20&key=AIzaSyAF8tkZYwyNkEdmzQqDcyWqnnOGHUUZKKA')
       .then((res) => setBooks(res.data.items))
       .catch((err) => console.error(err));
   }, []);

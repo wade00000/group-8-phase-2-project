@@ -34,9 +34,9 @@ export default function Book({ book, searchOnly, setSelectedBook, forceUpdate })
 
     try {
       if (newState) {
-        await postData('http://localhost:3000/favourites', book);
+        await postData('https://my-app-backend-lvfl.onrender.com/favourites', book);
       } else {
-        await deleteData(`http://localhost:3000/favourites/${book.id}`);
+        await deleteData(`https://my-app-backend-lvfl.onrender.com/favourites/${book.id}`);
       }
     } catch {
       setIsClick(!newState); // Rollback state if error occurs
@@ -49,17 +49,7 @@ export default function Book({ book, searchOnly, setSelectedBook, forceUpdate })
     }
   };
 
-  const handleAddToCollection = async (book) => {
-    const alreadyInCollection = collectionBooks.some(b => b.id === book.id);
-    if (alreadyInCollection) return; //Avoid duplicates
-  
-    try {
-      await postData('http://localhost:3000/collections', book);
-      setCollectionBooks([...collectionBooks, book]); // Update local state
-    } catch (err) {
-      console.error('Failed to add to collection:', err);
-    }
-  };
+ 
   
 
   return (
